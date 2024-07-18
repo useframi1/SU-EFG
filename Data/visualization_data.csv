@@ -27,7 +27,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 44,45,Low,0,Less than half,Moderate,32.79869565217391,Buy,Not Executed,Financials,Constant,Constant,1
 45,35,Low,1,More than half,Little,31.69367432950192,Buy,Executed,Materials,Increased,Increased,0
 46,51,Low,0,Less than half,Moderate,13.767343201754388,Sell,Executed,INDUSTRIAL,Constant,Constant,0
-47,20,Low,0,All,None,1.3466666666666667,Buy,Executed,Health Care,Constant,Constant,1
+47,21,Low,0,All,None,1.3466666666666667,Buy,Executed,Health Care,Constant,Constant,1
 52,69,Low,1,More than half,Little,9.090521276595744,Sell,Executed,Financials,Constant,Constant,1
 53,23,Low,1,More than half,Most,0.6659999999999999,Buy,Executed,Consumer Staples,Constant,Constant,0
 54,77,Low,0,All,None,1.3415,Buy,Executed,Financials,Increased,Increased,1
@@ -73,7 +73,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 130,68,Low,1,More than half,Moderate,4.296657407407407,Buy,Executed,INVESTMENT,Increased,Increased,0
 133,47,Medium,1,More than half,None,17.256,Buy,Executed,Financials,Increased,Increased,1
 136,51,Low,1,More than half,Little,8.714589552238806,Buy,Executed,Real Estate,Increased,Increased,0
-137,46,Low,1,Less than half,Most,20.382275641025643,Sell,Not Executed,Financials,Increased,Increased,0
+137,47,Low,1,Less than half,Most,20.382275641025643,Sell,Not Executed,Financials,Increased,Increased,0
 140,37,Low,1,More than half,Moderate,10.759196428571428,Sell,Executed,Industries,Increased,Increased,1
 142,31,Low,1,More than half,Moderate,3.2789311740890685,Buy,Executed,Financials,Increased,Increased,0
 143,38,Low,1,Less than half,Most,5.660964068546159,Sell,Executed,Financials,Constant,Constant,0
@@ -119,7 +119,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 217,49,Medium,0,More than half,Moderate,21.370916457286434,Buy,Executed,Industries,Increased,Increased,0
 218,65,Medium,1,More than half,Moderate,5.022022580645161,Sell,Executed,Consumer Discretionary,Increased,Increased,0
 219,66,Medium,1,Less than half,Moderate,16.804016949152544,Sell,Not Executed,Financials,Increased,Increased,1
-222,30,Low,1,More than half,Moderate,12.745833333333334,Sell,Executed,Real Estate,Increased,Increased,0
+222,30,Low,1,More than half,Moderate,12.745833333333334,Sell,Executed,Real Estate,Increased,Increased,1
 224,45,Low,0,More than half,Moderate,2.7454651162790698,Sell,Executed,Industries,Increased,Increased,1
 226,53,Low,1,Less than half,Most,30.013299212598426,Sell,Not Executed,Real Estate,Increased,Increased,0
 227,40,Low,0,More than half,Moderate,44.21264769322948,Buy,Executed,Industries,Constant,Constant,0
@@ -169,7 +169,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 299,41,Not Assigned,1,More than half,Moderate,5.437991701244814,Buy,Executed,Financials,Constant,Constant,1
 302,70,Not Assigned,0,More than half,Moderate,12.220779220779221,Sell,Executed,Financials,Constant,Constant,1
 303,37,Not Assigned,1,More than half,Moderate,35.0825,Buy,Executed,Industries,Decreased,Decreased,0
-304,33,Not Assigned,1,More than half,Moderate,15.220057692307693,Buy,Executed,Financials,Constant,Constant,0
+304,34,Not Assigned,1,More than half,Moderate,15.220057692307693,Buy,Executed,Financials,Constant,Constant,0
 305,76,Not Assigned,1,More than half,Little,41.84638970588236,Buy,Executed,Real Estate,Constant,Constant,0
 306,19,Not Assigned,1,More than half,Most,6.414545454545455,Buy,Executed,Financials,Constant,Constant,1
 307,73,Not Assigned,1,Less than half,Moderate,42.3414,Buy,Not Executed,Real Estate,Decreased,Decreased,1
@@ -339,7 +339,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 599,78,Low,0,Less than half,Most,11.764318181818181,Sell,Not Executed,Industries,Decreased,Decreased,1
 600,26,Low,1,Less than half,Moderate,10.869201803246044,Buy,Executed,Financials,Increased,Increased,0
 605,41,Not Assigned,0,All,None,25.17,Buy,Executed,Financials,Decreased,Decreased,1
-612,44,Not Assigned,1,More than half,Little,1.0889,Buy,Executed,Industries,Decreased,Decreased,0
+612,44,Not Assigned,1,More than half,Little,1.0889,Buy,Executed,Industries,Decreased,Decreased,1
 613,33,Low,1,More than half,Moderate,0.9009693486590038,Buy,Executed,Financials,Increased,Increased,0
 614,48,Not Assigned,1,More than half,Moderate,14.750342084023616,Buy,Executed,Industries,Constant,Constant,0
 617,53,Low,0,More than half,Moderate,7.635833333333333,Sell,Executed,Real Estate,Increased,Increased,1
@@ -381,7 +381,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 666,53,Low,1,More than half,Little,34.086,Sell,Executed,Financials,Increased,Increased,0
 667,68,Low,1,More than half,Moderate,30.19191056910569,Buy,Executed,Industries,Increased,Increased,0
 670,42,Low,0,More than half,Moderate,11.787119805825242,Buy,Executed,Financials,Constant,Constant,1
-672,44,Low,1,More than half,Moderate,7.747772727272727,Buy,Executed,Materials,Increased,Increased,0
+672,45,Low,1,More than half,Moderate,7.747772727272727,Buy,Executed,Materials,Increased,Increased,0
 673,47,Low,1,Less than half,Most,44.6517,Sell,Not Executed,Materials,Increased,Increased,1
 674,45,Low,1,More than half,Little,6.055954545454545,Buy,Executed,Health Care,Increased,Increased,1
 675,46,Low,1,More than half,Moderate,6.789125260614101,Buy,Executed,Financials,Constant,Constant,0
@@ -542,13 +542,13 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 934,22,Not Assigned,1,All,None,0.5433333333333333,Sell,Executed,Industries,Decreased,Decreased,1
 935,32,Low,1,Less than half,Moderate,17.31397109885621,Buy,Executed,Financials,Increased,Increased,0
 938,25,Not Assigned,1,Less than half,Moderate,2.5052857142857143,Sell,Not Executed,Financials,Increased,Increased,0
-939,78,Not Assigned,1,More than half,Most,23.18714227877386,Sell,Executed,Financials,Increased,Increased,0
+939,78,Not Assigned,1,More than half,Most,23.18714227877386,Sell,Executed,Financials,Decreased,Increased,0
 941,63,Not Assigned,1,More than half,Moderate,3.577955555555556,Sell,Executed,Financials,Constant,Constant,1
 942,19,Not Assigned,0,More than half,Little,8.597666666666667,Buy,Executed,Financials,Decreased,Decreased,1
 943,37,Not Assigned,0,Less than half,Moderate,2.7243513513513515,Buy,Not Executed,Financials,Decreased,Decreased,1
 945,60,Medium,1,More than half,Little,8.560058823529411,Sell,Executed,Financials,Increased,Increased,0
 947,40,Low,1,Less than half,Most,1.1444999999999999,Sell,Not Executed,Industries,Increased,Increased,0
-948,71,Low,1,More than half,Moderate,5.848740740740741,Buy,Executed,Industries,Increased,Increased,0
+948,71,Low,1,More than half,Moderate,5.848740740740741,Buy,Executed,Industries,Increased,Increased,1
 949,37,Medium,1,More than half,Moderate,7.302143661971831,Sell,Executed,Financials,Increased,Increased,0
 950,58,Low,1,More than half,Little,2.4915,Sell,Executed,Telecommunications,Increased,Increased,1
 951,36,Medium,1,More than half,Moderate,7.8174636363636365,Sell,Executed,Financials,Constant,Constant,0
@@ -564,7 +564,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 965,38,Low,1,More than half,Little,9.272743902439025,Sell,Executed,Financials,Increased,Increased,0
 967,43,Low,1,Less than half,Moderate,1.5903652173913043,Sell,Not Executed,Consumer Discretionary,Constant,Constant,0
 969,20,Low,0,More than half,Little,12.402961538461538,Buy,Executed,Financials,Increased,Increased,1
-970,30,Low,1,More than half,Moderate,7.91754945054945,Buy,Executed,Financials,Increased,Increased,1
+970,31,Low,1,More than half,Moderate,7.91754945054945,Buy,Executed,Financials,Increased,Increased,1
 972,51,Medium,1,More than half,Little,9.215947368421054,Buy,Executed,Industries,Increased,Increased,1
 973,41,Low,1,Less than half,Moderate,0.15054455445544554,Sell,Not Executed,Financials,Increased,Increased,1
 974,74,Low,1,Less than half,Little,6.252569105691057,Sell,Not Executed,Materials,Increased,Increased,0
@@ -582,14 +582,14 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1002,76,Low,1,More than half,Moderate,1.194872950819672,Buy,Executed,Health Care,Increased,Increased,1
 1003,61,Low,1,Less than half,Little,33.97211477572559,Sell,Not Executed,Financials,Increased,Increased,0
 1006,63,Low,0,Less than half,Most,12.069411036036035,Sell,Executed,Industries,Increased,Increased,0
-1009,49,Low,1,Less than half,Moderate,2.162130303030303,Sell,Executed,Financials,Increased,Increased,0
+1009,50,Low,1,Less than half,Moderate,2.162130303030303,Sell,Executed,Financials,Increased,Increased,0
 1011,54,Low,1,More than half,Moderate,18.65395945945946,Buy,Executed,Financials,Increased,Increased,0
 1012,54,Medium,1,More than half,None,5.220000000000001,Buy,Executed,Materials,Increased,Increased,1
 1013,50,Low,0,Less than half,Most,38.27407407407407,Sell,Not Executed,Financials,Increased,Increased,0
 1015,62,Medium,1,More than half,None,17.797800000000002,Buy,Executed,Information Technology,Increased,Increased,1
 1016,44,Low,1,All,None,4.370416666666666,Buy,Executed,Financials,Increased,Increased,0
 1017,59,Low,0,More than half,Moderate,27.460071734475374,Buy,Executed,Industries,Increased,Increased,1
-1018,41,Low,0,Less than half,Most,5.9923504016064255,Sell,Executed,Financials,Constant,Constant,0
+1018,41,Low,0,Less than half,Most,5.9923504016064255,Sell,Executed,Financials,Constant,Constant,1
 1020,38,Low,1,More than half,Moderate,14.165142857142857,Buy,Executed,Information Technology,Increased,Increased,0
 1022,75,Low,1,More than half,Moderate,14.750162790697674,Buy,Executed,Real Estate,Increased,Increased,0
 1024,41,High,1,Less than half,Most,1.7282051282051283,Buy,Not Executed,Financials,Increased,Increased,0
@@ -645,7 +645,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1096,75,Medium,1,More than half,Moderate,38.78792051282051,Buy,Executed,Financials,Constant,Constant,1
 1098,69,Low,1,More than half,Little,17.846850694444445,Buy,Executed,Financials,Increased,Increased,0
 1100,33,Low,0,More than half,None,65.32642857142856,Buy,Executed,Financials,Constant,Constant,0
-1102,40,Low,1,More than half,Little,19.975488584474885,Sell,Executed,Industries,Increased,Increased,0
+1102,41,Low,1,More than half,Little,19.975488584474885,Sell,Executed,Industries,Increased,Increased,0
 1103,67,Low,1,More than half,Moderate,25.23348623853211,Buy,Executed,Information Technology,Constant,Constant,0
 1104,53,Medium,0,Less than half,Moderate,14.013859424920128,Buy,Not Executed,Real Estate,Constant,Constant,1
 1106,43,Medium,1,Less than half,Most,2.0752995951417006,Sell,Not Executed,Consumer Staples,Increased,Increased,0
@@ -758,7 +758,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1285,34,Low,1,Less than half,Most,7.398272613065326,Buy,Not Executed,Financials,Increased,Increased,0
 1286,78,Low,0,More than half,Most,1.24,Buy,Executed,INDUSTRIAL,Increased,Increased,1
 1288,47,Medium,1,More than half,Moderate,11.21675238095238,Sell,Executed,Financials,Increased,Increased,0
-1290,41,Low,1,Less than half,Most,6.160321739130435,Sell,Not Executed,Financials,Increased,Increased,0
+1290,42,Low,1,Less than half,Most,6.160321739130435,Sell,Not Executed,Financials,Increased,Increased,0
 1291,77,Low,1,More than half,Moderate,22.679562500000003,Sell,Executed,Financials,Increased,Increased,0
 1293,35,Low,1,More than half,Moderate,11.00364240506329,Sell,Executed,Financials,Increased,Increased,0
 1294,45,Low,1,Less than half,Moderate,8.958727272727273,Buy,Not Executed,Telecommunication Services,Increased,Increased,1
@@ -766,7 +766,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1298,48,Low,1,More than half,None,13.847782608695653,Buy,Executed,Financials,Increased,Increased,1
 1299,67,Low,1,More than half,Little,11.293186666666667,Buy,Executed,Industries,Increased,Increased,0
 1300,73,Low,1,Less than half,Moderate,10.620304336989033,Sell,Not Executed,Industries,Increased,Increased,0
-1301,64,Low,0,More than half,Most,42.11333333333333,Buy,Executed,Financials,Constant,Constant,1
+1301,65,Low,0,More than half,Most,42.11333333333333,Buy,Executed,Financials,Constant,Constant,1
 1303,35,Low,1,More than half,Moderate,73.25117082523775,Buy,Executed,Financials,Constant,Constant,0
 1309,74,Low,1,Less than half,Moderate,347.3636363636364,Buy,Not Executed,Real Estate,Constant,Constant,0
 1310,75,Low,1,More than half,Moderate,3.8782611788617882,Buy,Executed,Industries,Increased,Increased,1
@@ -857,7 +857,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1452,59,Low,1,More than half,Moderate,1.5555999999999999,Buy,Executed,Financials,Increased,Increased,1
 1453,68,Low,0,More than half,Moderate,2.7345510204081633,Sell,Executed,Industries,Increased,Increased,0
 1454,40,Low,0,Less than half,Most,3.8180813953488375,Sell,Not Executed,Health Care,Increased,Increased,0
-1456,35,Low,1,Less than half,Most,8.516625176803394,Sell,Not Executed,Financials,Constant,Constant,0
+1456,35,Low,1,Less than half,Most,8.516625176803394,Sell,Not Executed,Financials,Constant,Constant,1
 1461,40,Medium,0,Less than half,Most,10.14950956937799,Buy,Not Executed,Financials,Increased,Increased,1
 1462,61,Low,1,More than half,Little,8.235549242424241,Buy,Executed,Financials,Increased,Increased,0
 1464,37,Medium,1,None,None,39.3,Buy,Not Executed,Real Estate,Constant,Constant,1
@@ -866,7 +866,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1474,32,Low,1,More than half,Most,2.385289344262295,Buy,Executed,Financials,Constant,Constant,1
 1475,36,Low,1,Less than half,Little,14.125306818181818,Buy,Executed,INDUSTRIAL,Constant,Constant,0
 1476,30,Low,1,More than half,Most,6.21125,Sell,Executed,Materials,Constant,Constant,1
-1477,70,Medium,1,More than half,None,16.39761904761905,Buy,Executed,Financials,Increased,Increased,0
+1477,70,Medium,1,More than half,None,16.39761904761905,Buy,Executed,Financials,Increased,Increased,1
 1479,58,Not Assigned,1,More than half,Little,4.680581395348837,Sell,Executed,Industries,Increased,Increased,0
 1480,34,Not Assigned,1,Less than half,Most,6.316666666666666,Sell,Not Executed,Financials,Decreased,Increased,1
 1487,48,Low,1,Less than half,None,11.362,Buy,Not Executed,Information Technology,Constant,Constant,1
@@ -892,7 +892,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1515,37,Low,1,All,None,2.678,Buy,Executed,Financials,Constant,Constant,1
 1516,58,Low,0,Less than half,Little,11.768048780487804,Buy,Not Executed,Industries,Increased,Increased,0
 1517,43,Low,1,Less than half,Most,4.971436103151862,Buy,Executed,Financials,Constant,Constant,0
-1518,42,Low,1,Less than half,Moderate,14.926625000000001,Buy,Not Executed,Financials,Constant,Constant,0
+1518,42,Low,1,Less than half,Moderate,14.926625000000001,Buy,Not Executed,Financials,Constant,Constant,1
 1521,29,Low,0,Less than half,Little,19.20310354223433,Sell,Executed,Industries,Constant,Constant,0
 1522,32,Low,0,More than half,Moderate,14.6388,Sell,Executed,Financials,Increased,Increased,0
 1523,22,Low,0,Less than half,Little,3.67671686746988,Sell,Not Executed,Consumer Discretionary,Increased,Increased,1
@@ -912,7 +912,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1546,62,Low,0,Less than half,Most,4.612249110320285,Buy,Not Executed,Financials,Increased,Increased,0
 1547,47,Low,1,More than half,Moderate,19.6152528,Sell,Executed,Industries,Constant,Constant,0
 1548,55,Low,1,More than half,Moderate,0.6828396946564885,Buy,Executed,Financials,Increased,Increased,1
-1551,75,Low,1,More than half,Moderate,6.262682232346242,Buy,Executed,Financials,Increased,Increased,0
+1551,76,Low,1,More than half,Moderate,6.262682232346242,Buy,Executed,Financials,Increased,Increased,0
 1554,36,Low,1,More than half,Little,5.612243243243243,Sell,Executed,INVESTMENT,Increased,Increased,1
 1555,74,Medium,0,Less than half,Most,5.300521126760564,Sell,Executed,Financials,Constant,Constant,1
 1556,53,Low,1,More than half,Little,0.929025641025641,Buy,Executed,Financials,Increased,Increased,0
@@ -980,7 +980,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1651,39,Not Assigned,1,Less than half,Moderate,1.7415789473684213,Sell,Not Executed,Financials,Decreased,Decreased,1
 1652,78,Low,1,More than half,None,5.592597402597402,Buy,Executed,Financials,Increased,Increased,0
 1654,19,Low,0,Less than half,Most,5.254,Sell,Not Executed,SERVICES,Constant,Constant,1
-1655,72,Low,0,More than half,None,21.803,Sell,Executed,Financials,Increased,Increased,1
+1655,73,Low,0,More than half,None,21.803,Sell,Executed,Financials,Increased,Increased,1
 1656,60,Low,1,More than half,Little,23.262119101281872,Buy,Executed,Financials,Decreased,Increased,0
 1658,29,Low,1,More than half,Moderate,9.579815823327616,Buy,Executed,Financials,Increased,Increased,0
 1660,40,Low,1,More than half,Moderate,3.4671904761904764,Buy,Executed,Financials,Increased,Increased,1
@@ -1059,7 +1059,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1798,58,Low,1,More than half,Moderate,13.621019555992483,Buy,Executed,Financials,Constant,Constant,1
 1799,38,Low,1,Less than half,Moderate,3.5488328865058087,Buy,Not Executed,Industries,Decreased,Decreased,1
 1800,36,Low,1,More than half,Moderate,20.769333333333336,Sell,Executed,Financials,Increased,Increased,0
-1801,45,Low,1,Less than half,Most,8.817246779388084,Buy,Executed,Consumer Staples,Decreased,Increased,0
+1801,46,Low,1,Less than half,Most,8.817246779388084,Buy,Executed,Consumer Staples,Decreased,Increased,0
 1803,30,Low,1,None,None,2.111428571428571,Sell,Not Executed,INDUSTRIAL,Increased,Increased,1
 1804,39,Low,0,Less than half,Little,8.705355656848996,Buy,Not Executed,Industries,Increased,Increased,1
 1805,31,Low,1,More than half,Moderate,26.248139798758295,Buy,Executed,Industries,Constant,Constant,0
@@ -1114,7 +1114,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 1894,41,Low,1,Less than half,Moderate,12.943571428571428,Sell,Not Executed,Financials,Constant,Constant,1
 1896,74,Low,1,More than half,Most,3.6673726235741446,Sell,Executed,Industries,Increased,Increased,1
 1900,29,Low,1,More than half,Little,2.604566079182631,Buy,Executed,Financials,Increased,Increased,0
-1901,55,Low,1,More than half,Moderate,1.562325,Buy,Executed,Information Technology,Constant,Constant,0
+1901,55,Low,1,More than half,Moderate,1.562325,Buy,Executed,Information Technology,Constant,Constant,1
 1905,39,Low,1,More than half,Moderate,17.812846503496502,Sell,Executed,Information Technology,Increased,Increased,1
 1906,62,Low,0,More than half,Moderate,21.678857142857144,Buy,Executed,Information Technology,Increased,Increased,0
 1907,73,Low,1,Less than half,Most,8.436646935933148,Sell,Not Executed,Financials,Increased,Increased,0
@@ -1239,7 +1239,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 2107,67,Low,1,More than half,Moderate,13.574520408163265,Sell,Executed,Financials,Constant,Constant,1
 2109,74,Low,1,Less than half,Most,56.94550053321785,Buy,Not Executed,Financials,Constant,Constant,1
 2110,43,Low,1,Less than half,Little,9.42822491349481,Sell,Not Executed,Industries,Increased,Increased,0
-2111,58,Low,1,All,None,8.5,Buy,Executed,Real Estate,Constant,Constant,1
+2111,59,Low,1,All,None,8.5,Buy,Executed,Real Estate,Constant,Constant,1
 2112,60,Low,1,Less than half,Most,2.8754313725490195,Buy,Not Executed,Financials,Constant,Constant,1
 2113,50,Low,0,More than half,Moderate,8.406379310344828,Buy,Executed,INDUSTRIAL,Increased,Increased,0
 2114,65,Low,1,Less than half,Most,2.8456119402985074,Sell,Not Executed,INDUSTRIAL,Increased,Increased,1
@@ -1304,7 +1304,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 2221,73,Medium,1,Less than half,Most,1.37975,Sell,Not Executed,Financials,Increased,Increased,1
 2223,71,Low,1,More than half,Moderate,6.289165467625899,Sell,Executed,Financials,Increased,Increased,0
 2227,43,Not Assigned,1,Less than half,Most,20.959285714285713,Buy,Executed,Financials,Increased,Increased,0
-2229,56,Not Assigned,1,More than half,Little,6.660021153846154,Sell,Executed,Financials,Constant,Constant,0
+2229,56,Not Assigned,1,More than half,Little,6.660021153846154,Sell,Executed,Financials,Constant,Constant,1
 2230,31,Not Assigned,1,All,None,26.52,Sell,Executed,Financials,Increased,Increased,1
 2231,65,Not Assigned,1,More than half,Moderate,22.162783357245335,Sell,Executed,Financials,Decreased,Decreased,0
 2232,24,Not Assigned,0,Less than half,Moderate,30.03673577986168,Buy,Executed,Financials,Constant,Constant,0
@@ -1391,7 +1391,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 2375,56,Low,1,More than half,Moderate,12.045256,Sell,Executed,Financials,Increased,Increased,0
 2376,70,Low,0,More than half,Little,3.328024390243902,Sell,Executed,Information Technology,Increased,Increased,1
 2378,35,Low,1,More than half,Little,0.7062197101449276,Sell,Executed,Financials,Constant,Constant,1
-2382,33,Not Assigned,1,More than half,Most,35.385440452428476,Sell,Executed,Financials,Increased,Decreased,0
+2382,33,Not Assigned,1,More than half,Most,35.385440452428476,Sell,Executed,Financials,Decreased,Decreased,0
 2383,31,Not Assigned,1,Less than half,Little,7.5404,Sell,Not Executed,Financials,Constant,Constant,1
 2384,54,Not Assigned,0,More than half,Moderate,39.15376744186047,Buy,Executed,Financials,Decreased,Increased,1
 2386,60,Low,1,More than half,Little,7.892451612903225,Buy,Executed,Materials,Increased,Increased,0
@@ -1662,7 +1662,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 2946,35,Low,0,More than half,Little,82.395,Sell,Executed,Financials,Increased,Increased,0
 2949,34,Low,1,All,None,32.096428571428575,Buy,Executed,Industries,Decreased,Decreased,1
 2950,35,Low,1,Less than half,Moderate,21.59818108108108,Buy,Not Executed,Real Estate,Constant,Constant,1
-2951,78,Low,1,More than half,Moderate,11.155969984202214,Buy,Executed,Consumer Staples,Increased,Increased,0
+2951,78,Low,1,More than half,Moderate,11.155969984202214,Buy,Executed,Consumer Staples,Increased,Increased,1
 2952,38,Low,1,More than half,Moderate,13.227573393053591,Buy,Executed,Financials,Constant,Constant,1
 2954,45,Not Assigned,0,More than half,Moderate,50.3333275862069,Buy,Executed,Financials,Decreased,Increased,0
 2956,49,Not Assigned,1,Less than half,Moderate,12.764311475409837,Sell,Not Executed,INDUSTRIAL,Constant,Constant,0
@@ -1724,7 +1724,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 3101,51,Not Assigned,0,Less than half,Moderate,3.183636363636363,Buy,Not Executed,Financials,Decreased,Decreased,0
 3102,75,Low,1,Less than half,Little,5.093009259259259,Sell,Executed,Financials,Constant,Constant,0
 3103,47,Not Assigned,1,Less than half,Little,2.7183847116695894,Buy,Executed,Financials,Constant,Constant,0
-3105,34,Low,1,More than half,Little,14.815,Sell,Executed,Financials,Increased,Increased,0
+3105,35,Low,1,More than half,Little,14.815,Sell,Executed,Financials,Increased,Increased,0
 3106,45,Medium,1,More than half,Moderate,22.290526315789474,Buy,Executed,Real Estate,Increased,Increased,0
 3107,67,Low,1,Less than half,Moderate,6.125714285714286,Sell,Not Executed,Industries,Increased,Increased,0
 3109,38,Low,1,Less than half,Moderate,62.517598240469205,Sell,Not Executed,Industries,Increased,Increased,0
@@ -1796,7 +1796,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 3226,71,Not Assigned,1,More than half,Moderate,60.527205633802815,Sell,Executed,Industries,Decreased,Increased,0
 3234,26,Low,0,More than half,Moderate,2.5625757575757575,Sell,Executed,Financials,Increased,Increased,1
 3235,24,Low,0,Less than half,Moderate,10.615909090909092,Buy,Not Executed,Industries,Constant,Constant,1
-3236,51,Low,1,Less than half,Most,2.000702247191011,Buy,Not Executed,Financials,Increased,Increased,0
+3236,51,Low,1,Less than half,Most,2.000702247191011,Buy,Not Executed,Financials,Increased,Increased,1
 3237,22,Low,0,More than half,Little,15.437970481380564,Buy,Executed,Financials,Constant,Constant,0
 3238,57,Medium,0,Less than half,Most,6.3772320441988954,Sell,Not Executed,INDUSTRIAL,Increased,Increased,0
 3245,48,Low,0,More than half,Moderate,8.085791666666667,Buy,Executed,Financials,Increased,Increased,0
@@ -1836,7 +1836,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 3333,31,Not Assigned,1,More than half,None,2.736625,Sell,Executed,Consumer Discretionary,Increased,Increased,1
 3339,44,Low,0,All,None,1.7215833333333332,Sell,Executed,Financials,Constant,Constant,1
 3341,68,Low,1,More than half,Little,5.478011363636363,Sell,Executed,Financials,Increased,Increased,0
-3342,49,Low,0,More than half,Little,5.165960106382979,Sell,Executed,Industries,Increased,Increased,0
+3342,49,Low,0,More than half,Little,5.165960106382979,Sell,Executed,Industries,Increased,Increased,1
 3343,47,Low,1,More than half,Most,0.7365192307692308,Buy,Executed,INVESTMENT,Constant,Constant,1
 3344,30,Low,0,More than half,Most,20.247235294117644,Buy,Executed,Real Estate,Increased,Increased,1
 3347,30,Low,1,Less than half,Moderate,5.0478695652173915,Sell,Not Executed,Health Care,Increased,Increased,1
@@ -2034,12 +2034,12 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 3807,36,Not Assigned,0,More than half,Little,23.193162046908316,Sell,Executed,Financials,Decreased,Decreased,0
 3808,66,Not Assigned,1,More than half,Little,41.69960784313725,Buy,Executed,Financials,Decreased,Decreased,1
 3810,74,Not Assigned,1,More than half,Little,14.557184237080165,Buy,Executed,Financials,Constant,Constant,0
-3811,58,Not Assigned,1,More than half,Moderate,3.529,Buy,Executed,Information Technology,Decreased,Decreased,0
+3811,58,Not Assigned,1,More than half,Moderate,3.529,Buy,Executed,Information Technology,Decreased,Decreased,1
 3814,62,Low,0,More than half,Moderate,5.22,Buy,Executed,Financials,Increased,Increased,1
 3815,66,Medium,1,Less than half,Most,45.76912676056338,Sell,Not Executed,Materials,Increased,Increased,1
 3823,40,Low,1,More than half,Moderate,19.011162177328846,Buy,Executed,Industries,Constant,Constant,0
 3824,24,Low,0,Less than half,None,11.817705882352941,Buy,Not Executed,Health Care,Increased,Increased,0
-3825,39,Low,1,More than half,Moderate,0.9630348837209302,Buy,Executed,Financials,Constant,Constant,0
+3825,39,Low,1,More than half,Moderate,0.9630348837209302,Buy,Executed,Financials,Constant,Constant,1
 3826,37,Low,1,None,All,2.4,Sell,Not Executed,Financials,Constant,Constant,0
 3827,45,Low,1,Less than half,Little,2.3811791564677085,Sell,Not Executed,Financials,Constant,Constant,0
 3830,68,Not Assigned,1,Less than half,Moderate,2.609745098039216,Buy,Not Executed,Industries,Decreased,Decreased,0
@@ -2051,7 +2051,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 3836,54,Not Assigned,1,More than half,Moderate,2.548659090909091,Buy,Executed,Consumer Staples,Constant,Constant,0
 3837,54,Not Assigned,1,More than half,Moderate,23.066155555555557,Buy,Executed,Financials,Constant,Constant,0
 3839,67,Not Assigned,1,Less than half,Moderate,35.9138440545809,Sell,Not Executed,Financials,Increased,Increased,0
-3840,34,Not Assigned,1,Less than half,Little,45.926707317073166,Sell,Not Executed,Real Estate,Decreased,Decreased,0
+3840,35,Not Assigned,1,Less than half,Little,45.926707317073166,Sell,Not Executed,Real Estate,Decreased,Decreased,0
 3841,25,Low,1,More than half,Moderate,34.79394495412844,Sell,Executed,Industries,Increased,Increased,0
 3842,66,Low,1,More than half,Moderate,10.707607954545454,Buy,Executed,Financials,Increased,Increased,0
 3843,53,Low,1,More than half,Moderate,5.45564553314121,Buy,Executed,Industries,Increased,Increased,0
@@ -2143,7 +2143,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4030,30,Low,1,More than half,Little,52.4129062624651,Buy,Executed,Consumer Discretionary,Increased,Increased,0
 4031,42,Low,0,More than half,Little,7.351241788321168,Sell,Executed,Industries,Increased,Increased,0
 4035,30,Low,0,Less than half,Little,60.924814814814816,Buy,Not Executed,Financials,Increased,Increased,0
-4037,31,Not Assigned,1,Less than half,Most,126.90553464203234,Buy,Not Executed,Real Estate,Constant,Constant,0
+4037,32,Not Assigned,1,Less than half,Most,126.90553464203234,Buy,Not Executed,Real Estate,Constant,Constant,0
 4039,56,Not Assigned,0,More than half,Most,5.993333333333333,Buy,Executed,Information Technology,Decreased,Decreased,1
 4040,79,Low,0,More than half,Moderate,37.452364044357466,Buy,Executed,Financials,Increased,Increased,0
 4041,73,Low,0,More than half,Moderate,7.894255555555555,Buy,Executed,Financials,Constant,Constant,0
@@ -2287,7 +2287,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4287,33,Low,0,More than half,Little,8.921863636363636,Buy,Executed,Financials,Constant,Constant,1
 4288,57,Low,1,More than half,Little,3.7610909999999995,Buy,Executed,Consumer Staples,Increased,Increased,0
 4289,70,Low,0,More than half,Moderate,31.175645728643214,Sell,Executed,Consumer Staples,Increased,Increased,1
-4290,78,Low,1,More than half,Moderate,2.3147142857142855,Buy,Executed,Information Technology,Increased,Increased,0
+4290,79,Low,1,More than half,Moderate,2.3147142857142855,Buy,Executed,Information Technology,Increased,Increased,0
 4291,56,Low,1,Less than half,Most,5.2424591254752855,Sell,Not Executed,Industries,Increased,Increased,0
 4292,77,Low,1,More than half,Moderate,5.808810066315253,Sell,Executed,Industries,Increased,Increased,0
 4293,79,Low,1,More than half,Little,3.1085333333333334,Sell,Executed,Financials,Constant,Constant,1
@@ -2349,7 +2349,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4389,31,Not Assigned,1,Less than half,Moderate,18.052380952380954,Buy,Not Executed,Real Estate,Decreased,Decreased,0
 4397,48,Medium,1,All,None,18.365,Sell,Executed,Financials,Increased,Increased,1
 4398,59,Low,1,Less than half,Moderate,37.63134065934066,Sell,Executed,Real Estate,Increased,Increased,0
-4399,57,Low,1,More than half,Moderate,10.576893617021277,Buy,Executed,INVESTMENT,Increased,Increased,0
+4399,58,Low,1,More than half,Moderate,10.576893617021277,Buy,Executed,INVESTMENT,Increased,Increased,0
 4400,31,Medium,1,Less than half,Moderate,24.297887755102042,Sell,Not Executed,Real Estate,Constant,Constant,1
 4401,66,Low,1,Less than half,Moderate,4.137043715846994,Sell,Not Executed,Consumer Discretionary,Increased,Increased,0
 4402,44,Low,1,More than half,Little,0.8494736842105264,Buy,Executed,Real Estate,Increased,Increased,0
@@ -2388,7 +2388,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4454,72,Low,1,Less than half,Moderate,6.928233333333334,Buy,Not Executed,Financials,Increased,Increased,1
 4455,70,Low,1,Less than half,Most,0.29857142857142854,Sell,Not Executed,INVESTMENT,Increased,Increased,1
 4459,44,Low,1,Less than half,None,5.2425,Sell,Not Executed,Financials,Increased,Increased,1
-4465,23,Not Assigned,1,More than half,Moderate,17.945741414141413,Buy,Executed,Industries,Constant,Constant,0
+4465,24,Not Assigned,1,More than half,Moderate,17.945741414141413,Buy,Executed,Industries,Constant,Constant,0
 4469,69,Low,1,More than half,Moderate,13.210721153846153,Sell,Executed,Financials,Increased,Increased,0
 4470,69,Low,1,More than half,Little,23.28070588235294,Buy,Executed,Financials,Increased,Increased,1
 4473,77,Low,1,Less than half,Most,46.95831548347613,Buy,Not Executed,Industries,Increased,Increased,0
@@ -2475,7 +2475,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4607,53,Not Assigned,1,More than half,Most,1.5297333333333336,Buy,Executed,Basic Materials,Increased,Increased,1
 4608,55,Low,1,More than half,Most,0.7982061403508772,Buy,Executed,Financials,Constant,Constant,1
 4609,45,Not Assigned,1,More than half,Little,2.263953216374269,Sell,Executed,Financials,Constant,Constant,0
-4611,64,Not Assigned,0,Less than half,Moderate,4.919134969325153,Buy,Not Executed,Industries,Constant,Constant,0
+4611,65,Not Assigned,0,Less than half,Moderate,4.919134969325153,Buy,Not Executed,Industries,Constant,Constant,0
 4614,28,Not Assigned,1,More than half,None,0.7530714285714285,Sell,Executed,Financials,Decreased,Decreased,1
 4615,52,Not Assigned,1,Less than half,Moderate,12.704210526315789,Buy,Not Executed,INDUSTRIAL,Decreased,Decreased,1
 4616,39,Not Assigned,1,More than half,Moderate,68.20913043478261,Sell,Executed,Industries,Decreased,Decreased,0
@@ -2528,15 +2528,15 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4720,31,Low,1,Less than half,Moderate,5.475468253968254,Sell,Executed,Consumer Discretionary,Increased,Increased,1
 4721,32,Low,0,None,None,0.48,Sell,Not Executed,Information Technology,Increased,Increased,0
 4722,46,Low,0,More than half,Moderate,7.664947204968944,Buy,Executed,Financials,Constant,Constant,0
-4723,61,Low,0,More than half,Moderate,33.999375,Sell,Executed,Financials,Increased,Increased,0
+4723,61,Low,0,More than half,Moderate,33.999375,Sell,Executed,Financials,Increased,Increased,1
 4725,67,Low,1,More than half,None,3.37276,Sell,Executed,Financials,Constant,Constant,1
-4726,34,Medium,1,Less than half,Moderate,0.17,Buy,Not Executed,INVESTMENT,Increased,Increased,1
+4726,35,Medium,1,Less than half,Moderate,0.17,Buy,Not Executed,INVESTMENT,Increased,Increased,1
 4728,39,Low,1,All,None,2.36572,Sell,Executed,Industries,Constant,Constant,1
 4732,33,Medium,1,More than half,Moderate,6.703340909090909,Sell,Executed,Information Technology,Increased,Increased,1
 4737,47,Low,1,More than half,Moderate,34.91389423076923,Buy,Executed,Financials,Increased,Increased,1
 4738,63,Not Assigned,1,More than half,None,18.659636363636363,Buy,Executed,Real Estate,Decreased,Decreased,0
 4739,63,Not Assigned,1,More than half,Moderate,28.85936592178771,Sell,Executed,Financials,Increased,Increased,0
-4740,20,Not Assigned,1,More than half,Moderate,62.662000000000006,Buy,Executed,Financials,Increased,Constant,0
+4740,20,Not Assigned,1,More than half,Moderate,62.662000000000006,Buy,Executed,Financials,Increased,Decreased,0
 4743,52,Not Assigned,0,More than half,Little,32.86974489795919,Buy,Executed,Industries,Increased,Increased,0
 4744,52,Not Assigned,0,More than half,Moderate,8.02897385620915,Sell,Executed,Industries,Decreased,Decreased,0
 4745,64,Not Assigned,1,More than half,Moderate,12.133944444444445,Sell,Executed,Consumer Discretionary,Constant,Constant,1
@@ -2557,7 +2557,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4783,69,Not Assigned,1,Less than half,Moderate,4.139144104803494,Sell,Not Executed,Information Technology,Constant,Constant,0
 4786,31,Not Assigned,0,All,None,22.424444444444443,Buy,Executed,FOOD,Decreased,Decreased,0
 4791,50,Not Assigned,1,More than half,Little,61.34256594110116,Buy,Executed,Materials,Decreased,Decreased,0
-4792,50,Not Assigned,1,More than half,Moderate,3.503714285714286,Buy,Executed,Information Technology,Decreased,Decreased,0
+4792,50,Not Assigned,1,More than half,Moderate,3.503714285714286,Buy,Executed,Information Technology,Decreased,Decreased,1
 4793,23,Not Assigned,1,More than half,Moderate,23.930333333333333,Buy,Executed,INVESTMENT,Decreased,Decreased,0
 4796,27,Low,1,All,None,9.2785,Sell,Executed,Consumer Staples,Constant,Constant,1
 4797,75,Not Assigned,1,Less than half,Moderate,23.7767836999436,Sell,Not Executed,Industries,Decreased,Decreased,0
@@ -2568,7 +2568,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4809,77,Not Assigned,1,Less than half,Most,1.120025641025641,Sell,Not Executed,Basic Materials,Decreased,Decreased,1
 4810,42,Not Assigned,1,Less than half,Moderate,11.416781609195402,Sell,Not Executed,Industries,Constant,Constant,1
 4813,18,Not Assigned,0,More than half,None,4.5188749999999995,Sell,Executed,Information Technology,Constant,Constant,0
-4814,37,Medium,1,More than half,Moderate,6.463980676328503,Buy,Executed,INVESTMENT,Increased,Increased,0
+4814,38,Medium,1,More than half,Moderate,6.463980676328503,Buy,Executed,INVESTMENT,Increased,Increased,0
 4822,28,Not Assigned,1,More than half,None,16.757142857142856,Buy,Executed,Financials,Decreased,Decreased,0
 4825,71,Not Assigned,0,More than half,Moderate,39.114625000000004,Buy,Executed,Industries,Constant,Constant,0
 4828,70,Low,1,More than half,Moderate,8.227916666666667,Buy,Executed,Consumer Discretionary,Constant,Constant,0
@@ -2596,16 +2596,16 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4872,37,Not Assigned,1,Less than half,Most,4.1747,Sell,Not Executed,Information Technology,Decreased,Decreased,1
 4874,70,Medium,1,Less than half,Moderate,6.899000000000001,Buy,Not Executed,Others,Constant,Constant,1
 4875,48,Low,1,More than half,Little,6.299916666666667,Buy,Executed,Financials,Increased,Increased,1
-4876,21,Low,1,Less than half,Moderate,21.309694193548385,Sell,Not Executed,Information Technology,Constant,Constant,0
+4876,22,Low,1,Less than half,Moderate,21.309694193548385,Sell,Not Executed,Information Technology,Constant,Constant,0
 4878,40,Low,1,More than half,Moderate,10.34375,Buy,Executed,Financials,Increased,Increased,1
-4879,61,Medium,1,More than half,Little,18.214782608695653,Buy,Executed,Information Technology,Increased,Increased,0
+4879,61,Medium,1,More than half,Little,18.214782608695653,Buy,Executed,Information Technology,Increased,Increased,1
 4880,58,Low,1,More than half,Most,13.582949275362319,Sell,Executed,Financials,Increased,Increased,1
 4881,66,Low,1,More than half,Moderate,4.7231089108910895,Buy,Executed,Financials,Increased,Increased,0
 4882,37,Low,1,Less than half,Moderate,5.244090568862275,Buy,Not Executed,Industries,Constant,Constant,1
 4883,41,Low,1,More than half,Moderate,8.940306748466258,Sell,Executed,Financials,Increased,Increased,0
 4884,65,Low,0,Less than half,Moderate,14.83125,Buy,Not Executed,Financials,Increased,Increased,1
 4885,50,Low,1,Less than half,Most,10.25004255319149,Buy,Not Executed,Industries,Increased,Increased,0
-4887,63,Low,1,Less than half,Little,21.241652173913042,Buy,Not Executed,Financials,Increased,Increased,0
+4887,63,Low,1,Less than half,Little,21.241652173913042,Buy,Not Executed,Financials,Increased,Increased,1
 4890,62,Low,1,Less than half,Moderate,22.85450266311585,Sell,Not Executed,Industries,Increased,Increased,0
 4895,74,Medium,1,More than half,Little,7.092823308270677,Sell,Executed,Financials,Decreased,Increased,0
 4896,38,Not Assigned,1,More than half,Moderate,65.31030769230769,Sell,Executed,Industries,Decreased,Decreased,0
@@ -2625,12 +2625,12 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4926,70,Low,1,Less than half,None,1.6420000000000001,Buy,Not Executed,Financials,Increased,Increased,1
 4928,36,Low,1,More than half,Moderate,6.651789845028921,Sell,Executed,Financials,Increased,Increased,0
 4930,45,Low,1,Less than half,None,17.588793103448275,Buy,Executed,INVESTMENT,Constant,Constant,0
-4931,33,Low,1,Less than half,Moderate,25.772144251626898,Sell,Not Executed,Financials,Increased,Increased,0
+4931,34,Low,1,Less than half,Moderate,25.772144251626898,Sell,Not Executed,Financials,Increased,Increased,0
 4935,33,Low,1,Less than half,Most,7.690747827598192,Buy,Executed,Financials,Increased,Increased,0
 4936,40,Low,0,More than half,Little,43.29710144927536,Buy,Executed,Materials,Constant,Constant,0
 4937,69,Low,1,Less than half,Moderate,9.543838709677418,Sell,Not Executed,Financials,Increased,Increased,0
 4938,19,Not Assigned,1,Less than half,Moderate,3.1316717095310134,Buy,Not Executed,INVESTMENT,Constant,Constant,0
-4939,45,Not Assigned,1,More than half,Little,13.109167182662537,Buy,Executed,Industries,Constant,Constant,0
+4939,46,Not Assigned,1,More than half,Little,13.109167182662537,Buy,Executed,Industries,Constant,Constant,0
 4940,22,Not Assigned,1,More than half,Little,37.25487341772152,Buy,Executed,Real Estate,Constant,Constant,0
 4941,43,Not Assigned,1,All,None,8.39,Sell,Executed,Real Estate,Constant,Constant,1
 4942,25,Not Assigned,1,More than half,Moderate,35.5953947368421,Sell,Executed,Industries,Decreased,Decreased,0
@@ -2651,8 +2651,8 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 4966,50,Not Assigned,0,Less than half,Moderate,10.39827868852459,Buy,Not Executed,Industries,Constant,Constant,0
 4967,49,Not Assigned,1,Less than half,Most,22.43,Sell,Not Executed,Financials,Constant,Constant,0
 4969,21,Not Assigned,0,Less than half,Most,8.826973684210527,Sell,Not Executed,Consumer Discretionary,Constant,Constant,1
-4970,39,Low,1,All,None,0.8426666666666667,Sell,Executed,Industries,Increased,Increased,1
-4972,48,Low,1,More than half,Moderate,36.105555555555554,Sell,Executed,Financials,Increased,Increased,1
+4970,40,Low,1,All,None,0.8426666666666667,Sell,Executed,Industries,Increased,Increased,1
+4972,49,Low,1,More than half,Moderate,36.105555555555554,Sell,Executed,Financials,Increased,Increased,1
 4974,75,Low,1,More than half,Moderate,10.78296897133221,Sell,Executed,Industries,Increased,Increased,0
 4976,37,Low,0,More than half,None,4.38,Sell,Executed,Financials,Constant,Constant,1
 4979,40,Not Assigned,0,More than half,Most,3.8911333333333333,Buy,Executed,Financials,Constant,Constant,0
@@ -2715,7 +2715,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 5106,56,Low,0,Less than half,Little,2.3234375,Sell,Not Executed,Consumer Discretionary,Constant,Constant,0
 5107,66,Not Assigned,1,All,None,5.983333333333333,Sell,Executed,Health Care,Increased,Increased,1
 5110,61,Low,0,Less than half,Most,10.79,Sell,Not Executed,Telecommunication Services,Increased,Increased,1
-5111,63,Low,1,More than half,None,56.33866666666667,Buy,Executed,Real Estate,Increased,Increased,0
+5111,64,Low,1,More than half,None,56.33866666666667,Buy,Executed,Real Estate,Increased,Increased,0
 5112,72,Low,1,More than half,Moderate,11.635545454545454,Sell,Executed,Financials,Increased,Increased,0
 5113,25,Low,1,None,Most,90.24692857142857,Sell,Not Executed,Financials,Constant,Constant,1
 5115,77,Low,1,More than half,Little,59.04232375478927,Buy,Executed,Materials,Constant,Constant,1
@@ -2822,7 +2822,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 5297,62,Low,1,More than half,Little,7.023740223463687,Buy,Executed,Financials,Constant,Constant,0
 5298,37,Low,1,All,None,0.863,Sell,Executed,Financials,Constant,Constant,0
 5301,63,Low,1,Less than half,Little,37.21,Buy,Not Executed,Industries,Constant,Constant,1
-5302,32,Low,1,All,None,1.5954285714285716,Buy,Executed,INDUSTRIAL,Increased,Increased,1
+5302,32,Low,1,All,None,1.5954285714285716,Buy,Executed,INDUSTRIAL,Decreased,Decreased,1
 5305,37,Low,1,Less than half,Most,5.358315789473684,Sell,Not Executed,Health Care,Increased,Increased,1
 5308,18,Medium,1,More than half,Moderate,17.015837406015038,Buy,Executed,Industries,Constant,Constant,0
 5310,73,Low,1,Less than half,Moderate,2.2799652406417112,Buy,Not Executed,Financials,Increased,Increased,0
@@ -2832,11 +2832,11 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 5318,65,Low,1,More than half,Moderate,4.184070588235294,Buy,Executed,Real Estate,Increased,Increased,1
 5319,20,Low,1,More than half,Little,10.130112456747405,Sell,Executed,Financials,Increased,Increased,0
 5331,57,Low,1,More than half,Moderate,11.26505,Buy,Executed,Industries,Increased,Increased,1
-5332,57,Low,1,Less than half,Most,65.0,Buy,Not Executed,Industries,Increased,Increased,0
+5332,58,Low,1,Less than half,Most,65.0,Buy,Not Executed,Industries,Increased,Increased,0
 5333,67,Low,0,More than half,Moderate,10.502144927536232,Sell,Executed,INDUSTRIAL,Increased,Increased,0
 5334,74,Low,1,All,None,0.126,Sell,Executed,Others,Increased,Increased,1
 5335,71,Low,1,Less than half,Little,2.8686520190023757,Sell,Not Executed,Financials,Increased,Increased,0
-5336,30,Low,0,More than half,None,3.3347499999999997,Sell,Executed,INDUSTRIAL,Decreased,Decreased,0
+5336,30,Low,0,More than half,None,3.3347499999999997,Sell,Executed,INDUSTRIAL,Decreased,Decreased,1
 5337,36,Low,1,More than half,Little,35.96584868421053,Buy,Executed,Industries,Decreased,Decreased,1
 5340,35,Medium,1,More than half,Moderate,3.6755000000000004,Sell,Executed,Financials,Constant,Constant,1
 5344,20,Low,1,Less than half,Most,18.840976377952757,Buy,Not Executed,Industries,Increased,Increased,0
@@ -2865,7 +2865,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 5394,56,Low,1,More than half,None,4.8075,Sell,Executed,Information Technology,Increased,Increased,1
 5395,71,Low,1,Less than half,Most,6.380285714285714,Buy,Not Executed,Financials,Increased,Increased,1
 5396,77,Low,0,More than half,Moderate,7.620416666666666,Buy,Executed,Industries,Decreased,Decreased,1
-5399,38,Low,1,Less than half,Most,22.433645737793363,Buy,Executed,Financials,Increased,Increased,0
+5399,39,Low,1,Less than half,Most,22.433645737793363,Buy,Executed,Financials,Increased,Increased,0
 5400,60,Low,1,All,None,0.49800000000000005,Sell,Executed,Tourism,Increased,Decreased,1
 5402,38,Low,1,More than half,Moderate,8.355577586206897,Buy,Executed,Financials,Constant,Constant,0
 5405,40,Low,1,More than half,Moderate,5.9664,Sell,Executed,Financials,Constant,Constant,0
@@ -2913,7 +2913,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 5481,41,Low,1,More than half,Little,8.394189075630251,Buy,Executed,Financials,Constant,Constant,0
 5484,47,Low,1,More than half,Moderate,33.00000512820513,Buy,Executed,Industries,Increased,Increased,0
 5486,35,Medium,0,More than half,Moderate,15.165851612903227,Sell,Executed,Financials,Increased,Increased,1
-5487,66,Low,1,All,None,10.59,Buy,Executed,Materials,Constant,Constant,0
+5487,66,Low,1,All,None,10.59,Buy,Executed,Materials,Constant,Constant,1
 5488,31,Low,0,Less than half,Moderate,40.360846153846154,Sell,Not Executed,Materials,Constant,Constant,0
 5489,72,Low,1,More than half,Little,20.510079136690646,Buy,Executed,Financials,Constant,Constant,1
 5492,65,Low,1,More than half,Most,17.89291711517761,Sell,Executed,Financials,Increased,Increased,0
@@ -3149,7 +3149,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 5934,33,Medium,0,Less than half,Most,8.225,Sell,Not Executed,Financials,Increased,Increased,1
 5935,74,Low,1,More than half,Most,5.065010928961749,Buy,Executed,Financials,Increased,Increased,0
 5936,39,Low,0,Less than half,Moderate,28.292954545454545,Buy,Not Executed,Financials,Increased,Increased,0
-5937,55,Low,1,More than half,None,14.065999999999999,Sell,Executed,Materials,Increased,Increased,0
+5937,56,Low,1,More than half,None,14.065999999999999,Sell,Executed,Materials,Increased,Increased,0
 5938,77,Low,1,All,None,1.3285,Sell,Executed,Financials,Constant,Constant,1
 5939,77,Low,1,More than half,Moderate,10.85924642857143,Buy,Executed,Financials,Increased,Increased,1
 5941,59,Low,1,Less than half,Moderate,7.3517241379310345,Buy,Not Executed,Consumer Discretionary,Increased,Increased,0
@@ -3315,7 +3315,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 6299,33,Low,1,More than half,Moderate,3.6101666666666667,Sell,Executed,Consumer Discretionary,Increased,Increased,1
 6301,77,Low,1,More than half,None,1.2936363636363637,Sell,Executed,Financials,Decreased,Decreased,1
 6302,36,Low,1,Less than half,Moderate,5.390266666666666,Sell,Not Executed,FOOD,Increased,Increased,0
-6303,32,Medium,1,More than half,Little,87.5512447368421,Buy,Executed,INDUSTRIAL,Constant,Decreased,0
+6303,32,Medium,1,More than half,Little,87.5512447368421,Buy,Executed,INDUSTRIAL,Decreased,Decreased,0
 6304,52,Low,1,All,None,13.5198,Buy,Executed,Materials,Constant,Constant,1
 6305,73,Low,1,Less than half,Most,10.280204678362573,Buy,Not Executed,Financials,Decreased,Decreased,0
 6306,78,Medium,0,More than half,Moderate,18.1078125,Buy,Executed,Financials,Increased,Increased,0
@@ -3331,9 +3331,9 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 6329,42,Not Assigned,1,More than half,Moderate,10.734536764705883,Buy,Executed,Financials,Constant,Constant,1
 6330,62,Low,0,More than half,Moderate,11.715660244059087,Buy,Executed,Financials,Decreased,Decreased,0
 6331,50,Low,1,All,None,18.63,Sell,Executed,Information Technology,Increased,Decreased,1
-6333,45,Medium,1,More than half,Moderate,13.881166666666667,Buy,Executed,Real Estate,Increased,Increased,0
+6333,46,Medium,1,More than half,Moderate,13.881166666666667,Buy,Executed,Real Estate,Increased,Increased,0
 6335,32,Medium,1,More than half,Moderate,7.805777777777778,Buy,Executed,Industries,Increased,Increased,1
-6336,31,Not Assigned,1,Less than half,None,6.298,Sell,Not Executed,Financials,Constant,Constant,0
+6336,31,Not Assigned,1,Less than half,None,6.298,Sell,Not Executed,Financials,Constant,Constant,1
 6337,35,Not Assigned,0,Less than half,None,1.8422727272727273,Sell,Not Executed,Financials,Increased,Increased,1
 6338,46,Not Assigned,1,All,None,12.684750000000001,Sell,Executed,Information Technology,Constant,Constant,1
 6339,44,Not Assigned,1,More than half,Most,17.541999999999998,Sell,Executed,Industries,Constant,Constant,1
@@ -3354,7 +3354,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 6374,47,Medium,0,More than half,None,19.013333333333332,Buy,Executed,Financials,Decreased,Decreased,0
 6375,38,Medium,0,More than half,Moderate,17.02138918918919,Sell,Executed,Financials,Increased,Increased,0
 6376,75,Medium,1,Less than half,Most,21.88765342960289,Buy,Not Executed,Materials,Increased,Increased,1
-6377,63,Medium,1,More than half,Moderate,71.02142857142857,Buy,Executed,Financials,Increased,Increased,1
+6377,64,Medium,1,More than half,Moderate,71.02142857142857,Buy,Executed,Financials,Increased,Increased,1
 6378,29,Low,1,More than half,None,15.670583333333333,Buy,Executed,Industries,Constant,Constant,1
 6379,25,Medium,1,More than half,Little,11.508442528735632,Sell,Executed,Industries,Constant,Constant,1
 6380,21,Low,1,More than half,Little,16.706818181818182,Buy,Executed,INVESTMENT,Constant,Decreased,0
@@ -3434,7 +3434,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 6513,54,Medium,1,More than half,None,23.89611111111111,Sell,Executed,Financials,Decreased,Decreased,1
 6514,73,Medium,1,More than half,None,2.8976666666666664,Buy,Executed,INVESTMENT,Constant,Constant,0
 6516,51,High,1,More than half,None,1.99925,Buy,Executed,Financials,Constant,Constant,1
-6517,30,Low,1,More than half,Little,6.815538461538462,Sell,Executed,Information Technology,Increased,Increased,0
+6517,30,Low,1,More than half,Little,6.815538461538462,Sell,Executed,Information Technology,Increased,Increased,1
 6519,71,Low,1,More than half,Moderate,12.725714285714286,Sell,Executed,Materials,Constant,Constant,1
 6523,67,Low,1,All,None,0.089,Buy,Executed,Energy,Increased,Increased,1
 6524,48,High,1,More than half,Little,15.564782608695653,Buy,Executed,Industries,Constant,Constant,0
@@ -3486,7 +3486,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 6611,23,Medium,1,More than half,Moderate,15.215833333333334,Sell,Executed,Energy,Decreased,Decreased,0
 6612,56,Low,0,More than half,Moderate,16.936646987112503,Buy,Executed,Financials,Decreased,Decreased,0
 6614,34,Low,0,Less than half,Little,3.786967741935484,Sell,Not Executed,Financials,Constant,Constant,1
-6615,33,Low,1,All,None,3.75,Sell,Executed,Industries,Increased,Decreased,1
+6615,33,Low,1,All,None,3.75,Sell,Executed,Industries,Decreased,Decreased,1
 6616,78,Medium,1,Less than half,Moderate,9.007630901287556,Sell,Not Executed,Industries,Decreased,Decreased,0
 6617,43,Medium,1,Less than half,Moderate,111.19999999999999,Sell,Not Executed,INDUSTRIAL,Decreased,Decreased,0
 6618,40,Medium,0,More than half,Moderate,11.645212765957448,Sell,Executed,Financials,Constant,Constant,1
@@ -3624,7 +3624,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 6850,27,Low,1,Less than half,None,0.3356666666666667,Sell,Not Executed,Health Care,Decreased,Decreased,1
 6853,73,Low,0,More than half,Moderate,3.4671250000000002,Buy,Executed,Information Technology,Increased,Increased,1
 6854,30,Medium,1,Less than half,Most,79.45,Sell,Not Executed,INDUSTRIAL,Decreased,Decreased,1
-6855,36,Medium,1,More than half,Moderate,4.112974545454545,Sell,Executed,Industries,Increased,Increased,0
+6855,37,Medium,1,More than half,Moderate,4.112974545454545,Sell,Executed,Industries,Increased,Increased,0
 6856,76,Low,1,More than half,None,6.647307692307693,Buy,Executed,Consumer Discretionary,Constant,Constant,1
 6858,73,Low,1,Less than half,Moderate,19.998250000000002,Sell,Not Executed,Financials,Increased,Increased,0
 6860,39,Low,1,More than half,Moderate,19.955392857142858,Sell,Executed,Financials,Increased,Increased,0
@@ -3737,7 +3737,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 7072,67,Low,0,All,None,20.199333333333332,Sell,Executed,Industries,Increased,Increased,1
 7076,37,Low,1,More than half,Moderate,7.76347278338945,Sell,Executed,Industries,Increased,Increased,0
 7077,31,Low,0,Less than half,Most,16.671219512195123,Buy,Not Executed,Financials,Constant,Constant,1
-7080,72,Low,1,Less than half,Moderate,1.205265873015873,Buy,Not Executed,Industries,Increased,Increased,0
+7080,72,Low,1,Less than half,Moderate,1.205265873015873,Buy,Not Executed,Industries,Increased,Increased,1
 7081,54,Low,0,Less than half,Most,17.03801357466063,Sell,Not Executed,Financials,Increased,Increased,0
 7082,25,Medium,1,More than half,Most,6.16675,Buy,Executed,Consumer Staples,Increased,Increased,1
 7083,41,Medium,0,More than half,Moderate,5.11161229946524,Buy,Executed,Industries,Increased,Increased,1
@@ -3822,7 +3822,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 7248,30,Low,0,Less than half,Most,6.787990476190476,Sell,Not Executed,Industries,Increased,Increased,0
 7250,18,Medium,1,More than half,Most,16.956666666666667,Buy,Executed,Financials,Increased,Increased,1
 7251,76,Low,1,More than half,Little,19.345079207920794,Sell,Executed,Industries,Increased,Increased,1
-7253,38,Low,1,More than half,Most,10.977014957264958,Buy,Executed,Financials,Increased,Increased,0
+7253,39,Low,1,More than half,Most,10.977014957264958,Buy,Executed,Financials,Increased,Increased,0
 7259,73,Medium,0,Less than half,Most,5.678166666666667,Buy,Not Executed,Energy,Decreased,Decreased,1
 7261,48,Medium,1,None,None,5.6,Buy,Not Executed,Information Technology,Constant,Constant,1
 7263,49,Low,1,None,None,7.489999999999999,Sell,Not Executed,Energy,Decreased,Decreased,1
@@ -3838,13 +3838,13 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 7296,46,Low,1,More than half,Little,12.082410256410256,Sell,Executed,Financials,Increased,Increased,0
 7299,40,Low,1,More than half,Moderate,54.300198019801975,Buy,Executed,Financials,Increased,Increased,0
 7301,37,Low,0,Less than half,Moderate,0.089625,Buy,Not Executed,INDUSTRIAL,Increased,Increased,1
-7302,40,Low,1,More than half,Little,2.8102295081967212,Sell,Executed,INDUSTRIAL,Constant,Constant,0
+7302,40,Low,1,More than half,Little,2.8102295081967212,Sell,Executed,INDUSTRIAL,Constant,Constant,1
 7303,43,Low,1,None,Moderate,0.5464,Sell,Not Executed,INVESTMENT,Increased,Increased,1
 7304,48,Low,1,More than half,Moderate,7.148985239852398,Sell,Executed,Consumer Staples,Increased,Increased,0
 7310,72,Medium,0,None,Most,393.2857142857143,Sell,Not Executed,Energy,Constant,Constant,1
 7312,58,Low,1,None,All,300.8,Sell,Not Executed,Energy,Constant,Constant,1
 7315,70,Medium,1,More than half,Moderate,16.7667878476946,Sell,Executed,Financials,Decreased,Increased,0
-7321,58,Medium,1,More than half,Little,6.969533333333334,Buy,Executed,Industries,Decreased,Decreased,1
+7321,59,Medium,1,More than half,Little,6.969533333333334,Buy,Executed,Industries,Decreased,Decreased,1
 7324,19,Low,1,More than half,Most,14.13875903614458,Sell,Executed,Consumer Discretionary,Increased,Increased,1
 7325,55,Low,1,Less than half,None,1.3491176470588235,Sell,Not Executed,Consumer Staples,Increased,Increased,1
 7326,30,Low,1,Less than half,Moderate,8.659357142857143,Buy,Not Executed,Health Care,Increased,Increased,0
@@ -3905,7 +3905,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 7429,40,High,1,More than half,Little,10.629233409610984,Sell,Executed,Financials,Decreased,Decreased,1
 7430,78,Low,1,More than half,Moderate,4.070388888888889,Buy,Executed,Financials,Increased,Decreased,0
 7431,73,Medium,1,More than half,Most,6.51,Sell,Executed,Information Technology,Constant,Constant,1
-7432,58,Low,0,All,None,8.423333333333334,Buy,Executed,INDUSTRIAL,Decreased,Increased,1
+7432,59,Low,0,All,None,8.423333333333334,Buy,Executed,INDUSTRIAL,Decreased,Increased,1
 7434,41,Low,1,More than half,Little,3.406244604316547,Sell,Executed,Industries,Increased,Increased,1
 7436,21,Not Assigned,1,More than half,None,3.589,Sell,Executed,Financials,Increased,Increased,1
 7437,22,Low,1,Less than half,Most,0.5272264900662251,Sell,Not Executed,Financials,Constant,Constant,0
@@ -4055,7 +4055,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 7697,20,Low,1,Less than half,None,0.47214285714285714,Buy,Not Executed,Health Care,Constant,Constant,1
 7698,68,Low,1,More than half,Little,17.31675641025641,Sell,Executed,Real Estate,Decreased,Decreased,0
 7699,57,Low,1,More than half,Little,19.290744299674266,Buy,Executed,Financials,Constant,Constant,0
-7700,43,Medium,1,More than half,Moderate,21.524714285714285,Buy,Executed,Financials,Constant,Constant,0
+7700,43,Medium,1,More than half,Moderate,21.524714285714285,Buy,Executed,Financials,Constant,Constant,1
 7701,30,Medium,1,Less than half,Moderate,2.424704918032787,Sell,Not Executed,Health Care,Decreased,Decreased,1
 7702,48,Medium,1,Less than half,Moderate,12.963611111111112,Buy,Not Executed,Information Technology,Decreased,Decreased,1
 7703,76,Low,1,Less than half,Most,23.409273231622745,Sell,Not Executed,Financials,Constant,Constant,0
@@ -4153,7 +4153,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 7855,61,Low,1,More than half,Moderate,9.309132464712269,Buy,Executed,Financials,Constant,Constant,0
 7858,73,Low,1,None,None,1.35,Buy,Not Executed,Financials,Increased,Increased,1
 7861,41,Low,1,More than half,Moderate,5.061336134453781,Buy,Executed,INDUSTRIAL,Constant,Constant,0
-7864,34,Low,1,More than half,Moderate,5.464831253713608,Buy,Executed,INDUSTRIAL,Increased,Increased,0
+7864,35,Low,1,More than half,Moderate,5.464831253713608,Buy,Executed,INDUSTRIAL,Increased,Increased,0
 7865,56,Medium,0,More than half,Moderate,10.699304182509506,Buy,Executed,Financials,Constant,Constant,0
 7866,59,Low,0,Less than half,Most,0.22216666666666665,Sell,Not Executed,INVESTMENT,Constant,Constant,1
 7867,18,Low,1,More than half,None,12.1661875,Buy,Executed,Financials,Decreased,Decreased,0
@@ -4177,8 +4177,8 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 7897,55,Low,1,All,None,0.47,Buy,Executed,Information Technology,Constant,Constant,0
 7898,45,Low,0,Less than half,Moderate,3.823192307692308,Sell,Not Executed,Financials,Decreased,Decreased,1
 7901,49,Low,1,More than half,Most,132.446,Buy,Executed,Health Care,Constant,Constant,0
-7902,63,Low,1,More than half,Moderate,3.2114907407407407,Buy,Executed,Financials,Increased,Increased,0
-7903,75,Low,1,More than half,None,49.845,Buy,Executed,FOOD,Increased,Increased,0
+7902,63,Low,1,More than half,Moderate,3.2114907407407407,Buy,Executed,Financials,Increased,Increased,1
+7903,75,Low,1,More than half,None,49.845,Buy,Executed,FOOD,Increased,Increased,1
 7905,52,Low,1,Less than half,Most,1.21589837398374,Buy,Not Executed,Industries,Constant,Constant,0
 7906,26,Low,1,All,None,0.7075,Buy,Executed,Financials,Constant,Constant,1
 7910,49,Medium,1,Less than half,Moderate,0.43270238095238095,Buy,Not Executed,Information Technology,Increased,Increased,1
@@ -4202,7 +4202,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 7951,52,Medium,0,Less than half,Little,11.33731707317073,Sell,Not Executed,Financials,Increased,Increased,0
 7952,71,Low,1,More than half,Most,16.113333333333333,Buy,Executed,INVESTMENT,Constant,Constant,1
 7953,71,Low,0,Less than half,Most,17.911721854304638,Buy,Not Executed,Financials,Constant,Constant,1
-7956,34,Low,1,None,None,20.0,Sell,Not Executed,Financials,Increased,Increased,1
+7956,35,Low,1,None,None,20.0,Sell,Not Executed,Financials,Increased,Increased,1
 7958,74,Low,1,More than half,Moderate,13.832975155279502,Sell,Executed,Financials,Increased,Increased,0
 7965,61,Low,0,More than half,Most,20.47494117647059,Sell,Executed,Industries,Increased,Increased,1
 7967,35,Low,0,None,All,9.59,Sell,Not Executed,Financials,Increased,Increased,1
@@ -4231,16 +4231,16 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8009,61,Low,1,More than half,Moderate,23.868622302158272,Buy,Executed,Financials,Increased,Increased,0
 8012,36,Medium,1,More than half,Moderate,14.10214814814815,Buy,Executed,Financials,Constant,Constant,0
 8014,38,Medium,0,More than half,Moderate,1.0348155339805825,Buy,Executed,Health Care,Constant,Constant,0
-8015,74,Medium,1,More than half,None,0.09033333333333333,Buy,Executed,Energy,Increased,Increased,1
+8015,75,Medium,1,More than half,None,0.09033333333333333,Buy,Executed,Energy,Increased,Increased,1
 8016,20,Low,1,Less than half,Most,8.362722222222223,Buy,Not Executed,Financials,Increased,Increased,0
 8017,20,Low,1,Less than half,Little,6.38150759458713,Sell,Not Executed,Industries,Increased,Increased,0
 8018,65,Medium,1,More than half,None,4.597711538461538,Sell,Executed,Financials,Increased,Increased,1
 8019,56,Low,1,Less than half,Moderate,42.497021276595746,Buy,Not Executed,Real Estate,Increased,Increased,0
 8021,41,Low,0,All,None,5.165,Buy,Executed,Consumer Staples,Constant,Constant,1
 8024,40,Low,1,More than half,Little,7.999910714285714,Sell,Executed,Materials,Constant,Constant,1
-8025,37,Low,0,More than half,Most,2.20689802631579,Sell,Executed,Financials,Decreased,Increased,1
-8026,59,Low,1,Less than half,Most,8.952034222222222,Sell,Not Executed,Industries,Constant,Constant,0
-8027,72,Low,1,More than half,Little,10.09881220657277,Buy,Executed,Industries,Decreased,Decreased,0
+8025,37,Low,0,More than half,Most,2.20689802631579,Sell,Executed,Financials,Decreased,Decreased,1
+8026,60,Low,1,Less than half,Most,8.952034222222222,Sell,Not Executed,Industries,Constant,Constant,0
+8027,73,Low,1,More than half,Little,10.09881220657277,Buy,Executed,Industries,Decreased,Decreased,0
 8029,71,Low,0,Less than half,Little,15.704931656995486,Buy,Not Executed,Energy,Increased,Increased,1
 8030,26,Low,0,Less than half,Moderate,3.086307692307692,Buy,Not Executed,Consumer Discretionary,Decreased,Decreased,1
 8032,42,Low,1,Less than half,Moderate,0.48016129032258065,Sell,Not Executed,INVESTMENT,Increased,Increased,0
@@ -4253,7 +4253,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8040,44,Low,1,Less than half,Little,23.206603353238403,Sell,Not Executed,Financials,Increased,Increased,0
 8041,78,Low,0,More than half,Moderate,8.478084337349397,Sell,Executed,Financials,Increased,Increased,1
 8042,46,Low,0,Less than half,Little,21.771333333333335,Sell,Not Executed,Materials,Increased,Increased,1
-8046,29,Low,1,More than half,Moderate,17.482596153846153,Sell,Executed,Industries,Increased,Increased,0
+8046,29,Low,1,More than half,Moderate,17.482596153846153,Sell,Executed,Industries,Increased,Increased,1
 8047,75,Low,1,More than half,None,3.143555555555556,Buy,Executed,Financials,Constant,Constant,1
 8050,54,Low,1,Less than half,Most,2.227575,Sell,Not Executed,Information Technology,Increased,Increased,1
 8051,63,Low,1,Less than half,Moderate,1.3172727272727274,Buy,Not Executed,Financials,Decreased,Decreased,1
@@ -4292,8 +4292,8 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8122,33,Low,1,More than half,None,10.636625,Sell,Executed,Financials,Increased,Increased,1
 8124,65,Not Assigned,1,Less than half,Moderate,3.5658759283529924,Buy,Not Executed,Industries,Constant,Constant,1
 8126,25,Not Assigned,1,Less than half,Little,7.0823809523809516,Sell,Not Executed,FOOD,Constant,Constant,1
-8128,63,Not Assigned,0,More than half,Moderate,6.529805886036319,Sell,Executed,Materials,Decreased,Decreased,0
-8129,62,Low,1,None,All,35.0,Buy,Not Executed,Financials,Decreased,Decreased,1
+8128,64,Not Assigned,0,More than half,Moderate,6.529805886036319,Sell,Executed,Materials,Decreased,Decreased,0
+8129,63,Low,1,None,All,35.0,Buy,Not Executed,Financials,Decreased,Decreased,1
 8131,52,Low,0,More than half,None,9.539194444444444,Sell,Executed,Financials,Increased,Increased,0
 8133,66,Low,1,Less than half,None,1.7945833333333334,Sell,Not Executed,Industries,Decreased,Decreased,1
 8134,44,Not Assigned,1,Less than half,Moderate,4.661704237288135,Sell,Not Executed,Financials,Constant,Constant,1
@@ -4400,7 +4400,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8337,64,Low,1,More than half,Little,12.502813186813187,Sell,Executed,Financials,Increased,Increased,0
 8338,76,Low,0,None,Most,5.233333333333333,Buy,Not Executed,Information Technology,Increased,Increased,1
 8340,35,Not Assigned,1,More than half,Moderate,3.613206896551724,Buy,Executed,Industries,Decreased,Decreased,1
-8345,79,Not Assigned,0,Less than half,Moderate,45.95395154185022,Sell,Executed,Consumer Staples,Increased,Increased,0
+8345,79,Not Assigned,0,Less than half,Moderate,45.95395154185022,Sell,Executed,Consumer Staples,Decreased,Decreased,0
 8346,44,Not Assigned,1,Less than half,Moderate,7.654362637362637,Sell,Not Executed,Financials,Decreased,Decreased,1
 8347,38,Not Assigned,1,Less than half,Moderate,14.574900391717964,Sell,Not Executed,Industries,Decreased,Decreased,0
 8349,25,Medium,0,More than half,None,13.966999999999999,Buy,Executed,Information Technology,Increased,Increased,1
@@ -4413,7 +4413,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8361,78,Not Assigned,1,None,None,1.02,Buy,Not Executed,Others,Increased,Increased,1
 8365,55,Medium,1,Less than half,Moderate,77.48556074766356,Sell,Not Executed,Real Estate,Constant,Constant,0
 8366,78,Low,1,More than half,Moderate,11.220336946702801,Sell,Executed,Financials,Increased,Increased,0
-8367,58,Low,1,More than half,Moderate,5.417808988764045,Buy,Executed,Industries,Increased,Increased,1
+8367,59,Low,1,More than half,Moderate,5.417808988764045,Buy,Executed,Industries,Increased,Increased,1
 8368,18,Low,1,More than half,None,18.31843137254902,Sell,Executed,Real Estate,Increased,Increased,0
 8371,29,Not Assigned,1,Less than half,Most,64.39809157667386,Sell,Not Executed,Materials,Decreased,Decreased,0
 8374,79,Not Assigned,0,Less than half,None,11.745833333333332,Sell,Not Executed,Industries,Decreased,Increased,1
@@ -4473,7 +4473,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8461,45,Not Assigned,0,More than half,Little,42.66290322580645,Buy,Executed,Financials,Decreased,Decreased,0
 8462,45,Not Assigned,0,More than half,Moderate,5.209111111111111,Buy,Executed,Energy,Decreased,Decreased,0
 8464,34,Not Assigned,1,Less than half,Moderate,4.50956976744186,Sell,Not Executed,Financials,Increased,Increased,0
-8465,29,Not Assigned,1,More than half,None,45.725,Buy,Executed,Real Estate,Decreased,Decreased,0
+8465,30,Not Assigned,1,More than half,None,45.725,Buy,Executed,Real Estate,Decreased,Decreased,0
 8468,40,Not Assigned,1,Less than half,Most,23.754197849462365,Buy,Not Executed,Financials,Decreased,Increased,0
 8469,58,Not Assigned,1,More than half,Little,5.882239495798319,Buy,Executed,Industries,Decreased,Decreased,1
 8470,50,Not Assigned,0,More than half,Moderate,14.988029319924197,Buy,Executed,Industries,Decreased,Decreased,0
@@ -4506,7 +4506,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8516,39,Not Assigned,0,Less than half,Most,20.197708333333335,Sell,Not Executed,Financials,Decreased,Decreased,1
 8517,39,Not Assigned,1,More than half,Moderate,10.406287878787879,Buy,Executed,Consumer Discretionary,Increased,Increased,0
 8518,46,Not Assigned,0,All,None,2.18,Buy,Executed,Financials,Decreased,Decreased,1
-8519,64,Not Assigned,1,More than half,None,2.8673684210526313,Sell,Executed,Financials,Decreased,Decreased,0
+8519,64,Not Assigned,1,More than half,None,2.8673684210526313,Sell,Executed,Financials,Decreased,Decreased,1
 8522,18,Not Assigned,1,Less than half,Moderate,9.767922077922078,Buy,Not Executed,Industries,Increased,Increased,0
 8523,28,Not Assigned,1,More than half,None,8.587240740740741,Sell,Executed,Financials,Decreased,Decreased,0
 8526,38,Not Assigned,1,None,None,4.95,Sell,Not Executed,Financials,Decreased,Decreased,1
@@ -4556,7 +4556,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8614,21,Low,0,Less than half,Most,7.723333333333334,Sell,Not Executed,SERVICES,Increased,Increased,1
 8615,49,Low,1,Less than half,Little,0.976974358974359,Sell,Not Executed,Information Technology,Increased,Increased,0
 8616,30,Low,1,Less than half,Moderate,23.403,Sell,Not Executed,Materials,Constant,Constant,1
-8618,68,Low,0,Less than half,Most,6.46,Sell,Not Executed,Information Technology,Increased,Increased,1
+8618,69,Low,0,Less than half,Most,6.46,Sell,Not Executed,Information Technology,Increased,Increased,1
 8619,29,Low,0,More than half,None,9.644375,Sell,Executed,Industries,Increased,Increased,1
 8620,44,Low,1,All,None,6.695,Sell,Executed,Industries,Increased,Increased,1
 8621,24,Low,0,More than half,Moderate,3.8866586804275705,Sell,Executed,Financials,Constant,Constant,1
@@ -4571,7 +4571,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8635,21,Low,1,More than half,Little,7.705395441595441,Buy,Executed,Industries,Increased,Increased,0
 8636,61,Low,1,More than half,Moderate,15.080265625000001,Buy,Executed,Materials,Increased,Increased,0
 8637,73,Low,0,Less than half,Moderate,7.8842095808383235,Sell,Not Executed,Financials,Increased,Increased,0
-8639,41,Low,1,More than half,Moderate,6.641759259259259,Sell,Executed,Financials,Decreased,Decreased,0
+8639,41,Low,1,More than half,Moderate,6.641759259259259,Sell,Executed,Financials,Decreased,Decreased,1
 8641,76,Low,1,None,All,0.5,Buy,Not Executed,Energy,Decreased,Decreased,1
 8643,23,Low,1,More than half,None,0.5961000000000001,Buy,Executed,Industries,Constant,Constant,1
 8648,52,Low,1,Less than half,Little,0.09068181818181818,Sell,Not Executed,INVESTMENT,Increased,Increased,0
@@ -4599,7 +4599,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8699,39,Low,1,More than half,Little,23.30682857142857,Buy,Executed,Materials,Decreased,Decreased,1
 8700,31,Low,1,All,None,27.78,Buy,Executed,Financials,Increased,Increased,1
 8702,78,Low,1,Less than half,Moderate,26.4420859375,Buy,Not Executed,Real Estate,Increased,Increased,1
-8703,52,Low,0,More than half,Moderate,26.202199421965314,Buy,Executed,Financials,Decreased,Increased,0
+8703,52,Low,0,More than half,Moderate,26.202199421965314,Buy,Executed,Financials,Decreased,Increased,1
 8704,44,Low,1,Less than half,Moderate,2.3695357142857145,Sell,Not Executed,Industries,Constant,Constant,0
 8706,44,Low,1,None,All,22.445,Sell,Not Executed,Materials,Increased,Decreased,1
 8707,26,Low,1,More than half,Moderate,13.590614889336015,Buy,Executed,Financials,Decreased,Increased,1
@@ -4673,7 +4673,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8826,51,Low,0,More than half,Little,6.2491666666666665,Buy,Executed,Information Technology,Increased,Increased,1
 8827,44,Low,1,More than half,Moderate,21.996392996108952,Sell,Executed,Financials,Increased,Increased,0
 8828,33,Low,0,Less than half,None,4.641,Sell,Not Executed,Financials,Increased,Increased,1
-8830,66,Low,0,Less than half,Moderate,1.857076923076923,Buy,Executed,Information Technology,Increased,Increased,0
+8830,66,Low,0,Less than half,Moderate,1.857076923076923,Buy,Executed,Information Technology,Increased,Increased,1
 8832,49,Low,0,More than half,Little,6.188004405286343,Buy,Executed,Financials,Increased,Increased,0
 8834,41,Low,1,More than half,Little,5.016111994219653,Sell,Executed,Financials,Constant,Constant,1
 8835,63,Low,0,More than half,None,19.52353846153846,Buy,Executed,Industries,Increased,Increased,0
@@ -4760,7 +4760,7 @@ ClientID,Age,RiskRate,IsMale,CompletedOrdersRatio,CanceledOrdersRatio,AvgPrice,M
 8995,59,Not Assigned,1,More than half,Moderate,5.890368794326242,Buy,Executed,Financials,Decreased,Decreased,1
 8998,53,Not Assigned,0,More than half,Little,11.856125714285715,Sell,Executed,Financials,Decreased,Decreased,1
 9000,61,Not Assigned,0,More than half,Little,15.002372881355932,Sell,Executed,Financials,Constant,Constant,0
-9001,34,Not Assigned,1,More than half,None,4.219083333333333,Sell,Executed,Industries,Decreased,Decreased,1
+9001,35,Not Assigned,1,More than half,None,4.219083333333333,Sell,Executed,Industries,Decreased,Decreased,1
 9006,52,Not Assigned,0,All,None,1.1885000000000001,Buy,Executed,Consumer Discretionary,Decreased,Decreased,1
 9009,22,Not Assigned,0,More than half,Little,13.249799999999999,Buy,Executed,Information Technology,Decreased,Decreased,1
 9011,39,Not Assigned,1,More than half,Moderate,11.474991869918698,Buy,Executed,Financials,Decreased,Decreased,0
