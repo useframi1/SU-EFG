@@ -753,36 +753,45 @@ def _saving(
     return train_df, test_df
 
 
-def data_preprocessing():
+def preprocess_data():
     print("##### Initializing #####")
     orders_df, clients_df = _initialization()
     print("----- Finished initialization -----\n")
+
     print("##### Aggregating to account level #####")
     df_account_level = _aggregate_to_account_level(
         orders_df=orders_df, clients_df=clients_df
     )
     print("----- Finished aggregating to account level -----\n")
+
     print("##### Aggregating to client level #####")
     df_client_level = _aggregate_to_client_level(df_account_level=df_account_level)
     print("----- Finished aggregating to client level -----\n")
+
     print("##### Binning columns #####")
     df_client_level = _bin_columns(df_client_level=df_client_level)
     print("----- Finished binning columns -----\n")
+
     print("##### Defining the label #####")
     df_client_level = _define_label(df_client_level=df_client_level)
     print("----- Finished defining the label -----\n")
+
     print("##### Dropping unnecessary columns #####")
     df_client_level = _drop_unnecessary_columns(df_client_level=df_client_level)
     print("----- Finished dropping unnecessary columns -----\n")
+
     print("##### Splitting train and test sets #####")
     train_df, test_df = _split_train_test(df_client_level=df_client_level)
     print("----- Finished splitting train and test sets -----\n")
+
     print("##### OHE #####")
     train_df, test_df, encoder = _OHE(train_df=train_df, test_df=test_df)
     print("----- Finished OHE -----\n")
+
     print("##### Normalizing #####")
     train_df, test_df, scalers = _normalize(train_df=train_df, test_df=test_df)
     print("----- Finished normalizing -----\n")
+
     print("##### Saving #####")
     train_df, test_df = _saving(
         train_df=train_df, test_df=test_df, encoder=encoder, scalers=scalers
