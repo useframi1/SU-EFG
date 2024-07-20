@@ -6,7 +6,8 @@ import warnings
 from datetime import datetime, timedelta
 from scipy import stats
 from sklearn.model_selection import train_test_split
-import pickle
+import joblib
+from utils import *
 
 warnings.filterwarnings("ignore")
 
@@ -14,8 +15,8 @@ pd.set_option("future.no_silent_downcasting", True)
 
 
 def _initialization():
-    orders_df = pd.read_csv("Data/orders_data_competition.csv")
-    clients_df = pd.read_csv("Data/clients_data_competition.csv")
+    orders_df = pd.read_csv("../Data/orders_data_competition.csv")
+    clients_df = pd.read_csv("../Data/clients_data_competition.csv")
 
     orders_df.dropna(inplace=True)
     orders_df = orders_df[orders_df["Order Via"] == "Online"]
@@ -647,18 +648,13 @@ def _OHE(train_df: pd.DataFrame, test_df: pd.DataFrame):
     return train_df, test_df, encoder
 
 
-def _get_normalized_data(data: np.ndarray, dist: str):
+def _get_normalized_data(data, dist):
     if dist == "uniform":
         scaler = MinMaxScaler().fit(data)
     elif dist == "norm":
         scaler = StandardScaler().fit(data)
-    elif dist == "cauchy":
-        ranked = stats.rankdata(data, method="average")
-        percentiles = 100.0 * (ranked - 1) / (len(data) - 1)
-        quantiles = np.percentile(data, percentiles)
-        return quantiles
     else:
-        return np.log(np.abs(data.flatten()) + 1)
+        return log_transform
     return scaler
 
 
@@ -695,24 +691,19 @@ def _normalize(train_df: pd.DataFrame, test_df: pd.DataFrame):
     columns_distributions_dict = _get_best_distribution(columns, train_df)
     scalers = {}
 
-    for column in columns_distributions_dict.keys():
+    for column, dist in columns_distributions_dict.items():
         train_data = np.array(train_df[column]).reshape(-1, 1)
         test_data = np.array(test_df[column]).reshape(-1, 1)
-        dist = columns_distributions_dict[column]
         scaler = _get_normalized_data(train_data, dist)
 
         if dist in ["uniform", "norm"]:
             train_df[column] = scaler.transform(train_data)
-            test_df[column] = scaler.transform(np.array(test_df[column]).reshape(-1, 1))
+            test_df[column] = scaler.transform(test_data)
             scalers[column] = scaler
-        elif dist == "cauchy":
-            train_df[column] = scaler
-            ranked = stats.rankdata(test_df[column], method="average")
-            percentiles = 100.0 * (ranked - 1) / (len(test_df[column]) - 1)
-            test_df[column] = np.percentile(test_df[column], percentiles)
         else:
-            train_df[column] = scaler
-            test_df[column] = np.log(np.abs(test_data.flatten()) + 1)
+            train_df[column] = scaler(train_data)
+            test_df[column] = scaler(test_data)
+            scalers[column] = scaler
 
     return train_df, test_df, scalers
 
@@ -740,15 +731,15 @@ def _saving(
         train_df[col] = train_df[col].astype("int8")
         test_df[col] = test_df[col].astype("int8")
 
-    train_df.to_csv("Data/train_set.csv", index=False)
+    train_df.to_csv("../Data/train_set.csv", index=False)
 
-    test_df.to_csv("Data/test_set.csv", index=False)
+    test_df.to_csv("../Data/test_set.csv", index=False)
 
-    with open("pickle_files/encoder.pkl", "wb") as f:
-        pickle.dump(encoder, f)
+    with open("../pickle_files/encoder.pkl", "wb") as f:
+        joblib.dump(encoder, f)
 
-    with open("pickle_files/scalers.pkl", "wb") as f:
-        pickle.dump(scalers, f)
+    with open("../pickle_files/scalers.pkl", "wb") as f:
+        joblib.dump(scalers, f)
 
     return train_df, test_df
 
