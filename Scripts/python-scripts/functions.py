@@ -1,6 +1,6 @@
 # Functions to be called by llm so that the features can be extracted from natural language prompt
 
-def get_age(age: int) -> int:
+def get_age(age: int = 40) -> int:
     """
     Will return the age of the client
     
@@ -12,7 +12,7 @@ def get_age(age: int) -> int:
     
     return age
 
-def get_risk_rate(risk_rate: str) -> str:
+def get_risk_rate(risk_rate: str = 'Not Assigned') -> str:
     """
     Will return the risk rate of the client
     
@@ -25,7 +25,7 @@ def get_risk_rate(risk_rate: str) -> str:
     
     return risk_rate
 
-def get_gender(gender: str) -> int:
+def get_gender(gender: str = 'Male') -> int:
     """
     Will return if the client is male or not
 
@@ -40,7 +40,7 @@ def get_gender(gender: str) -> int:
     else:
         return 0
 
-def get_completed_orders_ratio(completed_orders_ratio: str) -> str:
+def get_completed_orders_ratio(completed_orders_ratio: str = 'Most') -> str:
     """
     Will return the completed orders ratio of the client 
     
@@ -52,7 +52,7 @@ def get_completed_orders_ratio(completed_orders_ratio: str) -> str:
     
     return completed_orders_ratio
     
-def get_canceled_orders_ratio(canceled_orders_ratio: str) -> str:
+def get_canceled_orders_ratio(canceled_orders_ratio: str = 'Moderate') -> str:
     """
     Will return the canceled orders ratio of the client
     
@@ -64,7 +64,7 @@ def get_canceled_orders_ratio(canceled_orders_ratio: str) -> str:
 
     return canceled_orders_ratio
 
-def get_avg_price(avg_price: int) -> int:
+def get_avg_price(avg_price: float = 9.56) -> float:
     """
     Will return the average price of the clients orders
     
@@ -76,7 +76,7 @@ def get_avg_price(avg_price: int) -> int:
     
     return avg_price
 
-def get_most_frequent_order_type(most_frequent_order_type: str) -> str:
+def get_most_frequent_order_type(most_frequent_order_type: str = 'Sell') -> str:
     """
     Will return the most frequent order type of the client
     
@@ -88,7 +88,7 @@ def get_most_frequent_order_type(most_frequent_order_type: str) -> str:
     
     return most_frequent_order_type
 
-def get_most_frequent_execution_status(most_frequent_execution_status: str) -> str:
+def get_most_frequent_execution_status(most_frequent_execution_status: str = 'Executed') -> str:
     """
     Will return the most frequent execution status of the clients orders
     
@@ -100,7 +100,7 @@ def get_most_frequent_execution_status(most_frequent_execution_status: str) -> s
     
     return most_frequent_execution_status
 
-def get_most_frequent_sector_name(most_frequent_sector_name: str) -> str:
+def get_most_frequent_sector_name(most_frequent_sector_name: str = 'Financials') -> str:
     """
     Will return the most frequent sector that the clients orders are in
     
@@ -108,6 +108,24 @@ def get_most_frequent_sector_name(most_frequent_sector_name: str) -> str:
     most_frequent_sector_name (str): The most frequent sector that the clients orders are in
     """
     return most_frequent_sector_name
+
+def get_avg_order_rate__difference(avg_order_rate__difference: str = 'constant') -> str:
+    """
+    Will return the change in the client's order activity 
+    
+    Parameters:
+    get_avg_order_rate__difference (str): The change in the client's order activity. Can only be one of the following: 'increased', 'decreased', 'constant'
+    """
+    return avg_order_rate__difference
+
+def get_avg_order_quantity_rate__difference(avg_order_quantity_rate__difference: str = 'constant') -> str:
+    """
+    Will return the change in the client's order quantity 
+    
+    Parameters:
+    get_avg_order_quantity_rate__difference (str): The change in the client's order quantity. Can only be one of the following: 'increased', 'decreased', 'constant'
+    """
+    return avg_order_quantity_rate__difference
 
 import inspect
 def build_raven_prompt(function_list, user_query):
