@@ -108,3 +108,25 @@ def get_most_frequent_sector_name(most_frequent_sector_name: str) -> str:
     most_frequent_sector_name (str): The most frequent sector that the clients orders are in
     """
     return most_frequent_sector_name
+
+import inspect
+def build_raven_prompt(function_list, user_query):
+    raven_prompt = ""
+    for function in function_list:
+        signature = inspect.signature(function)
+        docstring = function.__doc__
+        prompt = \
+                f'''
+                Function:
+                def {function.__name__}{signature}
+                    """
+                    {docstring.strip()}
+                    """
+                    
+                '''
+        raven_prompt += prompt
+        
+    raven_prompt += f"User Query: {user_query}<human_end>"
+    return raven_prompt
+
+print(build_raven_prompt([get_age], '53 year old'))
