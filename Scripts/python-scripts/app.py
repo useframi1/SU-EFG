@@ -6,9 +6,9 @@ from pydantic import BaseModel
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from utils import *
 
-scalers = joblib.load("../pickle_files/scalers.pkl")
-encoder = joblib.load("../pickle_files/encoder.pkl")
-model = joblib.load("../pickle_files/model.pkl")
+scalers = joblib.load("../../pickle_files/scalers.pkl")
+encoder = joblib.load("../../pickle_files/encoder.pkl")
+model = joblib.load("../../pickle_files/model.pkl")
 
 app = FastAPI()
 

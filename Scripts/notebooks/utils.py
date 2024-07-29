@@ -63,7 +63,7 @@ def query_raven_with_reasoning(prompt):
     return call
 
 
-def build_raven_prompt(function_list, conversation):
+def build_raven_prompt(function_list, conversation, user_input):
     raven_prompt = ""
     for function in function_list:
         signature = inspect.signature(function)
@@ -79,9 +79,7 @@ def {function.__name__}{signature}
         raven_prompt += prompt
 
     raven_prompt += f"""
-User query: 
 {conversation}
-
-<human_end>
+User input:{user_input}<human_end>
 """
     return raven_prompt
