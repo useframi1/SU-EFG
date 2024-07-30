@@ -1,9 +1,8 @@
 import sys
 import os
 
-# Calculate the project root directory
 project_root = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), "../../..", "SU-EFG")
+    os.path.join(os.path.dirname(__file__), "../../..", "API")
 )
 
 if project_root not in sys.path:

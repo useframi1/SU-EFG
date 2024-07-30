@@ -1,9 +1,7 @@
 import sys
 import os
 
-project_root = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), "../../..", "SU-EFG")
-)
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "API"))
 
 if project_root not in sys.path:
     sys.path.append(project_root)
@@ -16,9 +14,9 @@ from pydantic import BaseModel
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from utilities.utils import log_transform
 
-scalers = joblib.load("../../pickle_files/scalers.pkl")
-encoder = joblib.load("../../pickle_files/encoder.pkl")
-model = joblib.load("../../pickle_files/model.pkl")
+scalers = joblib.load("../pickle_files/scalers.pkl")
+encoder = joblib.load("../pickle_files/encoder.pkl")
+model = joblib.load("../pickle_files/model.pkl")
 
 app = FastAPI()
 
