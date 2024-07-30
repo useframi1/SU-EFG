@@ -1,3 +1,14 @@
+import sys
+import os
+
+# Calculate the project root directory
+project_root = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "../../..", "SU-EFG")
+)
+
+if project_root not in sys.path:
+    sys.path.append(project_root)
+
 import pandas as pd
 import numpy as np
 from fitter import Fitter, get_common_distributions
@@ -7,7 +18,7 @@ from datetime import datetime, timedelta
 from scipy import stats
 from sklearn.model_selection import train_test_split
 import joblib
-from utils import *
+from utilities.utils import log_transform
 
 warnings.filterwarnings("ignore")
 
@@ -15,8 +26,8 @@ pd.set_option("future.no_silent_downcasting", True)
 
 
 def _initialization():
-    orders_df = pd.read_csv("../Data/orders_data_competition.csv")
-    clients_df = pd.read_csv("../Data/clients_data_competition.csv")
+    orders_df = pd.read_csv("../../Data/orders_data_competition.csv")
+    clients_df = pd.read_csv("../../Data/clients_data_competition.csv")
 
     orders_df.dropna(inplace=True)
     orders_df = orders_df[orders_df["Order Via"] == "Online"]
@@ -731,14 +742,14 @@ def _saving(
         train_df[col] = train_df[col].astype("int8")
         test_df[col] = test_df[col].astype("int8")
 
-    train_df.to_csv("../Data/train_set.csv", index=False)
+    train_df.to_csv("../../Data/train_set.csv", index=False)
 
-    test_df.to_csv("../Data/test_set.csv", index=False)
+    test_df.to_csv("../../Data/test_set.csv", index=False)
 
-    with open("../pickle_files/encoder.pkl", "wb") as f:
+    with open("../../pickle_files/encoder.pkl", "wb") as f:
         joblib.dump(encoder, f)
 
-    with open("../pickle_files/scalers.pkl", "wb") as f:
+    with open("../../pickle_files/scalers.pkl", "wb") as f:
         joblib.dump(scalers, f)
 
     return train_df, test_df

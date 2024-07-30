@@ -9,9 +9,9 @@ def main():
     best_model = get_best_model(train_df=train_df, test_df=test_df)
 
     if isinstance(best_model, keras.models.Sequential):
-        best_model.save("../pickle_files/model.keras")
+        best_model.save("../../pickle_files/model.keras")
     else:
-        with open("../pickle_files/model.pkl", "wb") as f:
+        with open("../../pickle_files/model.pkl", "wb") as f:
             joblib.dump(best_model, f)
 
     return best_model
