@@ -1,348 +1,43 @@
-<div class="row gy-3 ps-3 pe-3">
-    <div class="col-md-4 col-12">
-        <p class="text-primary">This is Raven, your AI assistant tailored to EFG customer churn prediction. <span
-                class="fw-bold text-success">The
-                following are the
-                required features I am looking for.</span></p>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne">
-                        Age
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            Age of the client in years.
-                        </p>
-                        <ul>
-                            <li><small>Must be a positive integer</small></li>
-                            <li><small>Default value is 40</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> 53 years old</p>
-                    </div>
+<div class="d-flex flex-column h-100 ps-3 pe-3">
+    <div class="row gy-3 h-100">
+        <div #featuresAccordion class="col-md-4 col-12 h-100 overflow-auto">
+            <p class="text-primary">This is Raven, your AI assistant tailored to EFG customer churn prediction. <span
+                    class="fw-bold text-success">The
+                    following are the
+                    required features I am looking for.</span></p>
+            <div class="accordion" id="featuresAccordion">
+                @for (feature of features; track $index) {
+                <div class="accordion-item p-1">
+                    <app-accordion-item [feature]="feature" [accordionId]="'featuresAccordion'"
+                        (opened)="opened(feature.title)"></app-accordion-item>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo">
-                        Gender
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            The gender of the client.
-                        </p>
-                        <ul>
-                            <li><small>Can write He/She, Male/Female, Man/Woman. Anything to highlight the
-                                    gender</small></li>
-                            <li><small>Default value is Male</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> The client is a female.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree">
-                        Risk rate
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            The assigned risk rate of the client from the KYC system.
-                        </p>
-                        <ul>
-                            <li><small>Must be one of the given values:</small>
-                                <ul>
-                                    <li>Low</li>
-                                    <li>Medium</li>
-                                    <li>High</li>
-                                    <li>Not Assigned</li>
-                                </ul>
-                            </li>
-                            <li><small>Default value is Not Assigned</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> The client has a low risk rate.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingAvgPrice">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseAvgPrice">
-                        Average Price
-                    </button>
-                </h2>
-                <div id="collapseAvgPrice" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            The average price of the client's orders.
-                        </p>
-                        <ul>
-                            <li><small>Must be a real number</small></li>
-                            <li><small>Default value is 9.56</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> The average price for the clients orders
-                            is 7.5</p>
-                    </div>
-                </div>
-            </div>
+                }
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingAvgOrderRateDifference">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseAvgOrderRateDifference">
-                        Average Order Rate Difference
-                    </button>
-                </h2>
-                <div id="collapseAvgOrderRateDifference" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            This is the trend of the clients order rate.
-                        </p>
-                        <ul>
-                            <li><small>Must depict one of the given categories:</small>
-                                <ul>
-                                    <li>Decreased</li>
-                                    <li>Constant</li>
-                                    <li>Increased</li>
-                                </ul>
-                            </li>
-                            <li><small>Default value is Constant</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> The client has done more orders recently.
-                        </p>
-                    </div>
-                </div>
             </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingAvgQuantityOrderedRateDifference">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseAvgQuantityOrderedRateDifference">
-                        Average Quantity Ordered Rate Difference
-                    </button>
-                </h2>
-                <div id="collapseAvgQuantityOrderedRateDifference" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            This is the trend for the client's order quantity.
-                        </p>
-                        <ul>
-                            <li><small>Must depict one of the given categories:</small>
-                                <ul>
-                                    <li>Decreased</li>
-                                    <li>Constant</li>
-                                    <li>Increased</li>
-                                </ul>
-                            </li>
-                            <li><small>Default value is Constant</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> The client has a decreased order quantity
-                            rate.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingCompletedOrdersRatio">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseCompletedOrdersRatio">
-                        Completed Orders Ratio
-                    </button>
-                </h2>
-                <div id="collapseCompletedOrdersRatio" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            The categorized ratio of the clients completed orders.
-                        </p>
-                        <ul>
-                            <li><small>Must depict one of the given categories:</small>
-                                <ul>
-                                    <li>All</li>
-                                    <li>More Than Half</li>
-                                    <li>Less Than Half</li>
-                                    <li>None</li>
-                                </ul>
-                            </li>
-                            <li><small>Default value is More Than Half</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> More than half of the clients orders are
-                            completed.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingCanceledOrdersRatio">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseCanceledOrdersRatio">
-                        Canceled Orders Ratio
-                    </button>
-                </h2>
-                <div id="collapseCanceledOrdersRatio" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            The categorized ratio of the clients canceled orders.
-                        </p>
-                        <ul>
-                            <li><small>Must depict one of the given categories:</small>
-                                <ul>
-                                    <li>All</li>
-                                    <li>Most</li>
-                                    <li>Moderate</li>
-                                    <li>Little</li>
-                                    <li>None</li>
-                                </ul>
-                            </li>
-                            <li><small>Default value is Moderate</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> Little of the clients orders are canceled.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingMostFrequentOrderType">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseMostFrequentOrderType">
-                        Most Frequent Order Type
-                    </button>
-                </h2>
-                <div id="collapseMostFrequentOrderType" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            The most frequent order type of the customer.
-                        </p>
-                        <ul>
-                            <li><small>Must be one of the given values:</small>
-                                <ul>
-                                    <li>Buy</li>
-                                    <li>Sell</li>
-                                </ul>
-                            </li>
-                            <li><small>Default value is Sell</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> The customer most frequently buys.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingMostFrequentExecutionStatus">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseMostFrequentExecutionStatus">
-                        Most Frequent Execution Status
-                    </button>
-                </h2>
-                <div id="collapseMostFrequentExecutionStatus" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            The most frequent execution status of the clients orders.
-                        </p>
-                        <ul>
-                            <li><small>Must be one of the given values:</small>
-                                <ul>
-                                    <li>Executed</li>
-                                    <li>Partially Executed</li>
-                                    <li>Not Executed</li>
-                                </ul>
-                            </li>
-                            <li><small>Default value is Executed</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> The customers orders are usually
-                            fully executed
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingMostFrequentSectorName">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseMostFrequentSectorName">
-                        Most Frequent Sector Name
-                    </button>
-                </h2>
-                <div id="collapseMostFrequentSectorName" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="text-success">
-                            The most frequent sector that the client orders in.
-                        </p>
-                        <ul>
-                            <li><small>Must be one of the given values:</small>
-                                <ul>
-                                    <li>Industries</li>
-                                    <li>Financials</li>
-                                    <li>Real Estate</li>
-                                    <li>Materials</li>
-                                    <li>Energy</li>
-                                    <li>INVESTMENT</li>
-                                    <li>Consumer Discretionary</li>
-                                    <li>INDUSTRIAL</li>
-                                    <li>Information Technology</li>
-                                    <li>Health Care</li>
-                                    <li>Consumer Staples</li>
-                                    <li>REAL ESTATE</li>
-                                    <li>Telecommunication Services</li>
-                                    <li>Basic Materials</li>
-                                    <li>Others</li>
-                                    <li>FOOD</li>
-                                    <li>Tourism</li>
-                                    <li>Telecommunications</li>
-                                    <li>SERVICES</li>
-                                </ul>
-                            </li>
-                            <li><small>Default value is Financials</small></li>
-                        </ul>
-                        <p class="text-secondary"> <strong>Example:</strong> The customer most orders from the
-                            financials
-                            sector.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
-    <div class="col-md-8 col-12 text-center">
-        <p class="fs-3 fw-bold text-success">Example input</p>
-        <div class="d-flex flex-column">
-            <div class="message align-self-end text-start ">
-                <p class="mb-0 fw-bold">You:</p>
-                <div class="p-3 mb-3 bg-secondary rounded-4 text-white">
-                    <p class="text-break mb-0">A client is a 53 year old male. He has a low risk rate. He mainly buys
-                        stocks
-                        in the real estate sector with
-                        an average price of 7.65 and the orders are usually fully executed. He has increased order
-                        activity
-                        and increased quantity ordered. Most of his orders are completed and little of his orders are
-                        canceled. Will he churn?</p>
+        <div class="col-md-8 col-12 text-center">
+            <p class="fs-3 fw-bold text-success">Example input</p>
+            <div class="d-flex flex-column">
+                <div class="message align-self-end text-start ">
+                    <p class="mb-0 fw-bold">You:</p>
+                    <div class="p-3 mb-3 bg-secondary rounded-4 text-white">
+                        <p class="text-break mb-0">A client is a 53 year old male. He has a low risk rate. He mainly
+                            buys
+                            stocks
+                            in the real estate sector with
+                            an average price of 7.65 and the orders are usually fully executed. He has increased order
+                            activity
+                            and increased quantity ordered. Most of his orders are completed and little of his orders
+                            are
+                            canceled. Will he churn?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="message align-self-start text-start">
-                <p class="mb-0 fw-bold text-success">Raven:</p>
-                <p class="text-break">
-                    Based on the information you provided, my prediction is that the client will not churn.
-                </p>
+                <div class="message align-self-start text-start">
+                    <p class="mb-0 fw-bold text-success">Raven:</p>
+                    <p class="text-break">
+                        Based on the information you provided, my prediction is that the client will not churn.
+                    </p>
+                </div>
             </div>
         </div>
     </div>

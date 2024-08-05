@@ -1,0 +1,26 @@
+<h2 class="accordion-header" [id]="'heading' + feature().title.replaceAll(' ', '')">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        [attr.data-bs-target]="'#collapse' + feature().title.replaceAll(' ', '')">
+        {{ feature().title }}
+    </button>
+</h2>
+<div [id]="'collapse'+feature().title.replaceAll(' ', '')" class="accordion-collapse collapse"
+    [attr.data-bs-parent]="'#'+accordionId()" (shown.bs.collapse)="toggleOpen()">
+    <div class="accordion-body">
+        <p class="text-success">{{ feature().description }}</p>
+        <ul>
+            @for (rule of feature().rules; track $index) {
+            <li><small>{{ rule.rule }}</small>
+                @if (rule.values.length > 0) {
+                <ul>
+                    @for (value of rule.values; track $index) {
+                    <li>{{value}}</li>
+                    }
+                </ul>
+                }
+            </li>
+            }
+        </ul>
+        <p class="text-secondary"><strong>Example:</strong> {{ feature().example }}</p>
+    </div>
+</div>

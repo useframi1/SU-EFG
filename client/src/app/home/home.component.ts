@@ -21,7 +21,7 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
   @ViewChild('conversationContainer')
-  private conversationContainer?: ElementRef;
+  private conversationContainer = inject(ElementRef);
   private chatbotService = inject(ChatbotService);
 
   prompt: Prompt = { prompt: '' };
@@ -44,13 +44,14 @@ export class HomeComponent {
   }
 
   scrollToBottom(): void {
-    if (this.conversationContainer) {
-      try {
-        this.conversationContainer.nativeElement.scrollTop =
-          this.conversationContainer.nativeElement.scrollHeight;
-      } catch (err) {
-        console.log('Scroll to bottom failed:', err);
-      }
+    try {
+      const container = this.conversationContainer.nativeElement;
+      container.scrollTo({
+        top: container.scrollHeight,
+        behavior: 'smooth',
+      });
+    } catch (err) {
+      console.log('Scroll to bottom failed:', err);
     }
   }
 }
