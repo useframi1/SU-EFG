@@ -1,0 +1,6 @@
+<label for={{label()}} class="form-label">{{label()}}</label>
+<select class="form-select" id={{label()}} [formControl]="control">
+    @for (item of values(); track $index) {
+    <option value={{item}}>{{item}}</option>
+    }
+</select>

@@ -1,23 +1,19 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavComponent } from './nav/nav.component';
+import { ChatbotService } from './_services/chatbot.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+  imports: [RouterOutlet, NavComponent],
 })
 export class AppComponent implements OnInit {
-  http = inject(HttpClient);
-  title: any = 'client';
+  private chatbotService = inject(ChatbotService);
 
   ngOnInit(): void {
-    this.http.get('http://localhost:5001/').subscribe({
-      next: (response) => (this.title = response),
-      error: (error) => console.log(error),
-      complete: () => console.log('Request has completed'),
-    });
+    this.chatbotService.create_session().subscribe({});
   }
 }

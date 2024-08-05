@@ -1,0 +1,82 @@
+<div class="d-flex flex-column px-3 pb-md-3 h-100 overflow-auto">
+    <p class="fs-5 text-primary fw-bold">Enter the client's data manually, <span class="text-success"> one feature at a
+            time.</span></p>
+    <div class="row mb-md-5 overflow-auto">
+        <div class="col-md-6 col-12 h-100 overflow-auto">
+            <form [formGroup]="clientForm" (ngSubmit)="predict()" class="row g-3" #form="ngForm">
+                <div class="col-12">
+                    <p class="text-secondary fs-5 mb-0">Client demographics</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-column">
+                        <label class="form-label">Gender</label>
+                        <div class="d-flex">
+                            <input class="form-check-input me-1" type="radio" formControlName="gender" id="male"
+                                value="Male">
+                            <label class="form-check-label me-3" for="male">Male</label>
+                            <input class="form-check-input me-1" type="radio" formControlName="gender" id="female"
+                                value="Female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <app-text-input [formControl]="$any(clientForm.controls['age'])" [label]="'Age'"
+                        [type]="'number'"></app-text-input>
+                </div>
+                <div class="col-12">
+                    <app-select-input [formControl]="$any(clientForm.controls['riskRate'])" [label]="'Risk Rate'"
+                        [values]="riskRates"></app-select-input>
+                </div>
+                <div class="col-12">
+                    <p class="text-secondary fs-5 mb-0 mt-2">Client trends</p>
+                </div>
+                <div class="col-12">
+                    <app-text-input [formControl]="$any(clientForm.controls['avgPrice'])" [label]="'Average Price'"
+                        [type]="'number'"></app-text-input>
+                </div>
+                <div class="col-md-6">
+                    <app-select-input [formControl]="$any(clientForm.controls['avgOrderRateDiff'])"
+                        [label]="'Average order rate'" [values]="avgOrderRates"></app-select-input>
+                </div>
+                <div class="col-md-6">
+                    <app-select-input [formControl]="$any(clientForm.controls['avgQuantityOrderRateDiff'])"
+                        [label]="'Average quantity ordered rate'" [values]="avgQuantityOrderedRates"></app-select-input>
+                </div>
+                <div class="col-12">
+                    <p class="text-secondary fs-5 mb-0 mt-2">Order ratios</p>
+                </div>
+                <div class="col-md-6">
+                    <app-select-input [formControl]="$any(clientForm.controls['completedOrdersRatio'])"
+                        [label]="'Completed orders ratio'" [values]="completedOrdersRatios"></app-select-input>
+                </div>
+                <div class="col-md-6">
+                    <app-select-input [formControl]="$any(clientForm.controls['canceledOrdersRatio'])"
+                        [label]="'Canceled orders ratio'" [values]="canceledOrdersRatios"></app-select-input>
+                </div>
+                <div class="col-12">
+                    <p class="text-secondary fs-5 mb-0 mt-2">Most frequent</p>
+                </div>
+                <div class="col-md-6">
+                    <app-select-input [formControl]="$any(clientForm.controls['orderType'])" [label]="'Order type'"
+                        [values]="orderTypes"></app-select-input>
+                </div>
+                <div class="col-md-6">
+                    <app-select-input [formControl]="$any(clientForm.controls['executionStatus'])"
+                        [label]="'Execution status'" [values]="executionStatus"></app-select-input>
+                </div>
+                <div class="col-12">
+                    <app-select-input [formControl]="$any(clientForm.controls['sectorName'])" [label]="'Sector name'"
+                        [values]="sectorNames"></app-select-input>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6 col-12 mt-md-0 mt-5">
+            <app-message-box [conversation]="conversation"></app-message-box>
+        </div>
+    </div>
+    <div class="position-fixed bottom-0 start-50 translate-middle-x col-md-3 col-11 mb-3">
+        <button [disabled]="!clientForm.valid" (click)="submitForm()"
+            class="btn btn-lg btn-primary w-100 rounded-4">Predict</button>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<form #promptForm="ngForm" (ngSubmit)="send_prompt()" autocomplete="off">
+    <div class="d-flex rounded-pill border border-3 border-secondary p-1 pe-3 ps-4 bg-white">
+        <input autofocus name="prompt" [(ngModel)]="prompt().prompt" type="text"
+            class="form-control form-control-lg p-0 border-0" placeholder="Message Raven..." required>
+
+        <button class="btn bg-white border-0 p-0" type="submit" [disabled]="promptForm.invalid || awaitingResponse()">
+            @if (promptForm.invalid || awaitingResponse()) {
+            <i class="fa fa-arrow-up text-white p-2 rounded-pill bg-secondary"></i>
+            }@else {
+            <i class="fa fa-arrow-up text-white p-2 rounded-pill bg-success"></i>
+            }
+        </button>
+    </div>
+</form>

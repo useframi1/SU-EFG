@@ -1,0 +1,23 @@
+<div #conversationContainer class="container h-100 pb-5 d-flex flex-column overflow-auto">
+    @if (conversation.length == 0) {
+    <div class="d-flex flex-column h-100 text-center">
+        <h1 class="text-primary display-4">Welcome to Raven</h1>
+        <p class="text-success fw-bold fs-6">Your personalized AI assistant for churn prediction.</p>
+        <div class="h-75 d-flex justify-content-center">
+            <div class="align-self-center">
+                <p class="text-primary mb-1">First time using Raven?</p>
+                <a routerLink="/instructions" class="fw-bold btn btn-sm btn-success rounded-pill px-3">See how to use
+                    it</a>
+            </div>
+        </div>
+    </div>
+    } @else {
+    <div class="align-self-center col-sm-8 col-12 px-md-5 mb-5">
+        <app-message-box [conversation]="conversation"></app-message-box>
+    </div>
+    }
+    <div class="position-fixed bottom-0 start-50 translate-middle-x col-md-6 col-11 mb-5">
+        <app-prompt-form [awaitingResponse]="awaitingResponse" [prompt]="prompt"
+            (formSubmit)="send_prompt()"></app-prompt-form>
+    </div>
+</div>
