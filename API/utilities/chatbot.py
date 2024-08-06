@@ -17,14 +17,27 @@ class Chatbot:
                 "content": "Your name is Raven. You are a client churn prediction assistant. Use the get_client_data function to get all the client data and provide the results of the prediction. If any client detail is missing, you are required to notify the user, do not guess the value.",
             },
         ]
-
-    def run_conversation(self, user_prompt):
-        self.messages.append(
+        self.single_prompt_messages: list[dict] = [
+            {
+                "role": "system",
+                "content": "Your name is Raven. You are a client churn prediction assistant. Use the get_client_data function to get all the client data and provide the results of the prediction.",
+            },
             {
                 "role": "user",
-                "content": user_prompt,
-            }
-        )
+                "content": "",
+            },
+        ]
+
+    def run_conversation(self, user_prompt: str, single_prompt: bool):
+        if not single_prompt:
+            self.messages.append(
+                {
+                    "role": "user",
+                    "content": user_prompt,
+                }
+            )
+        else:
+            self.single_prompt_messages[1]["content"] = user_prompt
 
         tools = [
             {
@@ -99,18 +112,22 @@ class Chatbot:
         ]
         response = self.client.chat.completions.create(
             model=self.model,
-            messages=self.messages,
+            messages=(
+                self.messages if not single_prompt else self.single_prompt_messages
+            ),
             tools=tools,
             tool_choice="auto",
             max_tokens=4096,
         )
         response_message = response.choices[0].message
         tool_calls = response_message.tool_calls
+
         if tool_calls:
             available_functions = {
                 "get_client_data": get_client_data,
             }
-            self.messages.append(response_message)
+            if not single_prompt:
+                self.messages.append(response_message)
 
             for tool_call in tool_calls:
                 function_name = tool_call.function.name
@@ -140,21 +157,35 @@ class Chatbot:
                         "avg_order_quantity_rate_difference"
                     ),
                 )
-                self.messages.append(
-                    {
-                        "tool_call_id": tool_call.id,
-                        "role": "tool",
-                        "name": function_name,
-                        "content": function_response,
-                    }
-                )
+                if not single_prompt:
+                    self.messages.append(
+                        {
+                            "tool_call_id": tool_call.id,
+                            "role": "tool",
+                            "name": function_name,
+                            "content": function_response,
+                        }
+                    )
+                else:
+                    self.single_prompt_messages.append(
+                        {
+                            "tool_call_id": tool_call.id,
+                            "role": "tool",
+                            "name": function_name,
+                            "content": function_response,
+                        }
+                    )
 
             second_response = self.client.chat.completions.create(
-                model=self.model, messages=self.messages
+                model=self.model,
+                messages=(
+                    self.messages if not single_prompt else self.single_prompt_messages
+                ),
             )
 
-            return second_response.choices[0].message.content
+            if single_prompt:
+                self.single_prompt_messages.pop()
 
-        # self.messages.append(response_message.content)
+            return second_response.choices[0].message.content
 
         return response_message.content

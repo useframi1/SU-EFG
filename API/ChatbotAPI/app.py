@@ -28,6 +28,7 @@ app.add_middleware(
 
 class DataInput(BaseModel):
     prompt: str
+    isSinglePrompt: bool
 
 
 chatbot_sessions = {}
@@ -67,7 +68,9 @@ async def send_prompt(data: DataInput, user_id: str = Depends(get_user_id)):
     chatbot = chatbot_sessions[user_id]
 
     try:
-        response = chatbot.run_conversation(data.model_dump()["prompt"])
+        response = chatbot.run_conversation(
+            data.model_dump()["prompt"], data.model_dump()["isSinglePrompt"]
+        )
         return {"response": response}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

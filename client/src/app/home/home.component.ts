@@ -24,7 +24,7 @@ export class HomeComponent {
   private conversationContainer = inject(ElementRef);
   private chatbotService = inject(ChatbotService);
 
-  prompt: Prompt = { prompt: '' };
+  prompt: Prompt = { prompt: '', isSinglePrompt: false };
   conversation: Message[] = [];
   awaitingResponse: boolean = false;
 
@@ -39,7 +39,7 @@ export class HomeComponent {
       },
     });
 
-    this.prompt = { prompt: '' };
+    this.prompt.prompt = '';
     setTimeout(() => this.scrollToBottom(), 0);
   }
 

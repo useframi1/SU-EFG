@@ -1,4 +1,10 @@
-import { Component, inject, OnInit, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  inject,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import {
   AbstractControl,
   FormBuilder,
@@ -26,10 +32,11 @@ import { ChatbotService } from '../_services/chatbot.service';
   styleUrls: ['./manual-entries.component.css'],
 })
 export class ManualEntriesComponent implements OnInit {
+  @ViewChild('form') form: any;
+  @ViewChild('conversationContainer')
+  private conversationContainer = inject(ElementRef);
   private fb = inject(FormBuilder);
   private chatbotService = inject(ChatbotService);
-
-  @ViewChild('form') form: any;
 
   clientForm: FormGroup = new FormGroup({});
   conversation: Message[] = [
@@ -139,13 +146,30 @@ export class ManualEntriesComponent implements OnInit {
 
   predict() {
     this.conversation[1].message = '';
-    console.log(this.conversation[0].message);
     this.chatbotService
-      .send_prompt({ prompt: this.conversation[0].message })
+      .send_prompt({
+        prompt: this.conversation[0].message,
+        isSinglePrompt: true,
+      })
       .subscribe({
         next: (response) => {
           this.conversation[1] = { sender: 'bot', message: response.response };
+          setTimeout(() => this.scrollToBottom(), 0);
         },
       });
+    setTimeout(() => this.scrollToBottom(), 0);
+  }
+
+  scrollToBottom(): void {
+    try {
+      const container = this.conversationContainer.nativeElement;
+      console.log(container);
+      container.scrollTo({
+        top: container.scrollHeight,
+        behavior: 'smooth',
+      });
+    } catch (err) {
+      console.log('Scroll to bottom failed:', err);
+    }
   }
 }

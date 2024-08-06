@@ -1,7 +1,7 @@
 <div class="d-flex flex-column px-3 pb-md-3 h-100 overflow-auto">
     <p class="fs-5 text-primary fw-bold">Enter the client's data manually, <span class="text-success"> one feature at a
             time.</span></p>
-    <div class="row mb-md-5 overflow-auto">
+    <div #conversationContainer class="row mb-md-5 overflow-auto">
         <div class="col-md-6 col-12 h-100 overflow-auto">
             <form [formGroup]="clientForm" (ngSubmit)="predict()" class="row g-3" #form="ngForm">
                 <div class="col-12">
@@ -71,7 +71,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-md-6 col-12 mt-md-0 mt-3">
+        <div class="col-md-6 col-12 my-md-0 my-3">
             <app-message-box [conversation]="conversation"></app-message-box>
         </div>
     </div>
