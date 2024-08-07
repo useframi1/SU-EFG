@@ -151,7 +151,6 @@ export class ManualEntriesComponent implements OnInit {
       prompt: this.conversation[0].message,
       isSinglePrompt: true,
     };
-    console.log(prompt);
     this.chatbotService.send_prompt(prompt).subscribe({
       next: (response) => {
         this.conversation[1] = { sender: 'bot', message: response.response };
