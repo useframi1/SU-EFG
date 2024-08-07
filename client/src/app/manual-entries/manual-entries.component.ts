@@ -18,6 +18,7 @@ import { MessageBoxComponent } from '../_components/message-box/message-box.comp
 import { Message } from '../_models/message';
 import { SelectInputComponent } from '../_components/select-input/select-input.component';
 import { ChatbotService } from '../_services/chatbot.service';
+import { Prompt } from '../_models/prompt';
 
 @Component({
   selector: 'app-manual-entries',
@@ -146,24 +147,23 @@ export class ManualEntriesComponent implements OnInit {
 
   predict() {
     this.conversation[1].message = '';
-    this.chatbotService
-      .send_prompt({
-        prompt: this.conversation[0].message,
-        isSinglePrompt: true,
-      })
-      .subscribe({
-        next: (response) => {
-          this.conversation[1] = { sender: 'bot', message: response.response };
-          setTimeout(() => this.scrollToBottom(), 0);
-        },
-      });
+    const prompt: Prompt = {
+      prompt: this.conversation[0].message,
+      isSinglePrompt: true,
+    };
+    console.log(prompt);
+    this.chatbotService.send_prompt(prompt).subscribe({
+      next: (response) => {
+        this.conversation[1] = { sender: 'bot', message: response.response };
+        setTimeout(() => this.scrollToBottom(), 0);
+      },
+    });
     setTimeout(() => this.scrollToBottom(), 0);
   }
 
   scrollToBottom(): void {
     try {
       const container = this.conversationContainer.nativeElement;
-      console.log(container);
       container.scrollTo({
         top: container.scrollHeight,
         behavior: 'smooth',

@@ -46,10 +46,9 @@ def get_client_data(
     for old_key, new_key in key_mapping.items():
         if old_key in provided_params:
             provided_params[new_key] = provided_params.pop(old_key)
-
     try:
         response = requests.post(
-            url=os.getenv("MODEL_API_BASE_URL") + "/predict", json=provided_params
+            url=os.getenv("MODEL_API_BASE_URL") + "predict", json=provided_params
         )
         if response.status_code == 200:
             data = response.json()

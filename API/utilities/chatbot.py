@@ -133,7 +133,6 @@ class Chatbot:
                 function_name = tool_call.function.name
                 function_to_call = available_functions[function_name]
                 function_args = json.loads(tool_call.function.arguments)
-
                 function_response = function_to_call(
                     age=function_args.get("age"),
                     risk_rate=function_args.get("risk_rate"),
@@ -175,7 +174,6 @@ class Chatbot:
                             "content": function_response,
                         }
                     )
-
             second_response = self.client.chat.completions.create(
                 model=self.model,
                 messages=(
