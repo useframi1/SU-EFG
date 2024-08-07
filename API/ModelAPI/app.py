@@ -1,3 +1,11 @@
+import sys
+import os
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "API"))
+if project_root not in sys.path:
+    sys.path.append(project_root)
+
+
 import joblib
 import numpy as np
 import pandas as pd
@@ -6,9 +14,9 @@ from pydantic import BaseModel
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from utilities.utils import log_transform
 
-scalers = joblib.load("pickle_files/scalers.pkl")
-encoder = joblib.load("pickle_files/encoder.pkl")
-model = joblib.load("pickle_files/model.pkl")
+scalers = joblib.load("../pickle_files/scalers.pkl")
+encoder = joblib.load("../pickle_files/encoder.pkl")
+model = joblib.load("../pickle_files/model.pkl")
 
 app = FastAPI()
 
@@ -75,4 +83,4 @@ def predict(data: DataInput):
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8000)
